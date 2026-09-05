@@ -505,14 +505,14 @@
      🔴 "LINES TO BE ACTIVATED" RESETS TO ZERO. Installed is not activated.
 
   ─────────────────────────────────────────────────────────────────────────────
-  10. FINANCE
+  10. FINANCE   ** CORRECTED — MY EARLIER EUR 35M FIGURE WAS FAR TOO LOW **
   ─────────────────────────────────────────────────────────────────────────────
 
-     | Loan requested:               | 35,000,000 € |
-     | Loan prepayment:              | 0 €          |
-     | Financial investments:        | 0 €          |
-     | Fixed-term deposit:           | 0 €          |
-     | Line of credit requested:     | 10,000,000 € |
+     | Loan requested:               | 104,000,000 € |
+     | Loan prepayment:              | 0 €           |
+     | Financial investments:        | 0 €           |
+     | Fixed-term deposit:           | 0 €           |
+     | Line of credit requested:     | 10,000,000 €  |
 
      | Customers payment terms:      | 60 Days |
      | Factoring:                    | CHECKED |
@@ -524,28 +524,102 @@
      | S                       | 120    |
      | H                       | 120    |
 
-     | Investment in securities |                  |               |
-     | Security                 | Amount to invest | Sell Security |
-     | 1                        | 0 €              | unchecked     |
-     | 2                        | 0 €              | unchecked     |
-     | 3                        | 0 €              | unchecked     |
+  STEP 1 — CASH AVAILABLE ON 2 JANUARY  (the S41 formula, applied verbatim)
 
-     🔵 REQUEST THE LOAN DELIBERATELY — EUR 35,000,000. Capex of EUR 33,600,000
-        plus EUR 9,018,588 of S raw material must be paid in cash (S37), against
-        a balance sheet that starts about EUR 70,300,000 short once payables,
-        loans and the credit line settle. Year 1 taught us the lesson the
-        expensive way: if you do not request the loan, THE SIMULATOR REQUESTS IT
-        FOR YOU, and if cash still goes negative you pay 20% OVERDRAFT — which
-        cost us EUR 1,892,199. A planned 10% loan is half the price of an
-        unplanned 20% overdraft.
-     🔵 CREDIT LINE EUR 10,000,000 on top, as the buffer. It charges only on what
-        is drawn.
-     🔴 NO FIXED-TERM DEPOSIT. In Year 1 we deposited EUR 15,000,000 at 2.5%
-        WHILE PAYING 20% ON AN OVERDRAFT. That was my recommendation and it was
+     | Line                                          | EUR          |
+     | --------------------------------------------- | ------------ |
+     | Cash and equivalents, 31 December             |  -33,411,377 |
+     | minus loan amortisations due 2 January        |     -956,512 |
+     | minus credit lines outstanding                |   -5,000,000 |
+     | minus accounts payable (S 332,362 + H 30,622,435) | -30,954,797 |
+     | plus financial investments                    |            0 |
+     | plus fixed-term deposits                      |            0 |
+     | plus accounts receivable (we factored it all) |            0 |
+     | CASH AVAILABLE 2 JANUARY                      |  -70,322,686 |
+
+     📌 WE START THE YEAR EUR 70,322,686 IN THE HOLE, BEFORE SPENDING A CENT.
+        That is the raw material error still working its way through the
+        balance sheet. Note especially that receivables are ZERO — factoring
+        converted them to cash last year, so there is nothing coming in.
+
+  STEP 2 — OCR FOR THIS PLAN  (S41)
+
+     | Component                                            | EUR         |
+     | ---------------------------------------------------- | ----------- |
+     | 80% x new capex 36,600,000                           |  29,280,000 |
+     |   (6 S lines 12,600,000 + 10 H lines 15,000,000       |             |
+     |    + 3 SMED 9,000,000)                                |             |
+     | 50% x opex base 5,913,000                            |   2,956,500 |
+     |   (advertising 608,000 + POP 107,000                  |             |
+     |    + sales managers 1,320,000 + rep salaries 2,856,000|             |
+     |    + overhead 600,000 + market research 422,000)      |             |
+     | 15% x raw material 9,018,588                         |   1,352,788 |
+     | OCR REQUIRED                                         |  33,589,288 |
+
+  STEP 3 — THE TEST THAT MATTERS
+
+     LOAN NEEDED = OCR − CASH AVAILABLE
+                 = 33,589,288 − (−70,322,686)
+                 = EUR 103,911,974
+
+     🔴 THE TWO SCENARIOS YOU ASKED FOR BOTH FAIL:
+
+     | Loan       | Cash after loan | OCR        | Shortfall  | What happens          |
+     | ---------- | --------------- | ---------- | ---------- | --------------------- |
+     | 70,000,000 |        -322,686 | 33,589,288 | 33,911,974 | simulator adds a loan |
+     | 35,000,000 |     -35,322,686 | 33,589,288 | 68,911,974 | simulator adds a loan |
+     | 104,000,000|      33,677,314 | 33,589,288 |          0 | CLEAN — no auto loan  |
+
+     At EUR 70,000,000 the cash account is STILL NEGATIVE (-322,686) before a
+     single euro is spent, so S42 forces a mandatory loan on top and an
+     overdraft at 20% becomes likely. The extra 20% interest on the gap would be
+     roughly EUR 6,782,395. At EUR 35,000,000 it is roughly EUR 13,782,395.
+     That is precisely the mistake that cost us EUR 1,892,199 last year, repeated
+     at four to seven times the scale.
+
+     🟢 AT EUR 104,000,000 THE PLAN IS CLEAN. Cash after the loan is
+        EUR 33,677,314 against an OCR of EUR 33,589,288 — a margin of
+        EUR 88,026. No automatic loan, no overdraft.
+
+  WHAT EACH LOAN LEVEL ACTUALLY BUYS
+
+     | Plan                                   | Loan needed | Net income  | ROE    |
+     | -------------------------------------- | ----------- | ----------- | ------ |
+     | A · survive: no expansion, A+B only    |  73,013,766 |  33,575,693 |  47.3% |
+     | B · SMED + enter E, no new lines       |  80,817,383 |  28,300,627 |  39.9% |
+     | C · +4 S +6 H, enter E                 |  95,413,777 |  66,407,759 |  93.6% |
+     | D · 32 lines, enter E   RECOMMENDED    | 103,911,974 |  90,010,768 | 126.9% |
+
+     📌 EVEN DOING NOTHING NEW REQUIRES EUR 73,013,766. There is no version of
+        Year 2 that avoids a very large loan — the hole was dug last year.
+        Given that, the question is not whether to borrow but what to do with it.
+     📌 Plan D borrows EUR 30,898,208 more than plan A and returns
+        EUR 56,435,075 more net income. EVERY EXTRA EURO BORROWED RETURNS
+        ABOUT EUR 1.83.
+     🔴 NOTE PLAN B IS WORSE THAN PLAN A. Entering market E while borrowing more
+        but adding no capacity just moves units between markets and pays
+        interest for the privilege. This is the arithmetic proof of the point in
+        Part 2: E AND EXPANSION GO TOGETHER OR NOT AT ALL.
+
+  DOWNSIDE CHECK ON PLAN D
+     If market E delivers NOTHING at all, plan D still produces EUR 47,673,437 of
+     net income at 67.2% ROE — roughly ten times Year 1. The unsold units become
+     inventory, which never deteriorates and sells first next year (S3).
+
+  THE OTHER FINANCE DECISIONS
+
+     🔵 CREDIT LINE EUR 10,000,000 ON TOP. It costs 7% plus 1% plus 1% only on
+        what is drawn, against 20% for an overdraft. With a margin of only
+        EUR 88,026 on the OCR test, this is the buffer that keeps a small
+        forecasting miss from becoming an overdraft.
+     🔴 NO FIXED-TERM DEPOSIT. Last year we deposited EUR 15,000,000 at 2.5%
+        while paying 20% on an overdraft. That was my recommendation and it was
         wrong. Never hold a 2.5% asset against a 20% liability.
-     🔵 SUPPLIER TERMS 120 DAYS on both products — the cheapest financing
-        available, and we are barely buying raw material anyway.
-     🟢 FACTORING ON. 5.5% against 10%.
+     🟡 NO PREPAYMENT. It costs a 1% penalty and we have no spare cash.
+     🔵 SUPPLIER TERMS 120 DAYS — the cheapest financing available, and we are
+        barely buying raw material this year anyway.
+     🟢 FACTORING ON. 5.5% against 10%. It costs about EUR 3,104,041 on this
+        revenue, and it is what converts sales into cash inside the year.
 
 ###############################################################################
   PART 4  —  WHAT THIS PLAN SHOULD DELIVER
@@ -557,9 +631,13 @@
      | Markets served      |         A, B  |         A, B, E  |
      | Revenue             |    73,108,602 |     ~338,600,000 |
      | Gross margin        |    21,765,673 |     ~141,200,000 |
-     | Operating income    |     8,214,100 |     ~105,100,000 |
-     | Net income          |     4,919,135 |     ~101,100,000 |
-     | ROE                 |         6.94% |            ~143% |
+     | Operating income    |     8,214,100 |     ~104,500,000 |
+     | Net income          |     4,919,135 |      ~90,000,000 |
+     | ROE                 |         6.94% |            ~127% |
+
+     (Net income revised down from the earlier ~101M once the real financing
+     cost of a EUR 104,000,000 loan is included: EUR 11,430,317 of interest and
+     upfront fee, plus EUR 3,104,041 of factoring.)
 
      🟡 Treat this as the upper case. It assumes we capture 21.2% of E's
         moisturiser market in our first year there. The sensitivity table in
@@ -600,8 +678,8 @@
      [ ] All salaries re-entered — they reset to the legal minimum
      [ ] Logistics overwritten in ALL THREE markets now, including E
      [ ] 10 last-mile vehicles in A and B, 12 in E — not 1
-     [ ] Loan of EUR 35,000,000 requested DELIBERATELY
+     [ ] Loan of EUR 104,000,000 requested DELIBERATELY — 35M is NOT enough
      [ ] No fixed-term deposit
-     [ ] Credit line EUR 10,000,000
+     [ ] Credit line EUR 10,000,000 on top of the loan
      [ ] Supplier terms 120 days both products
      [ ] 18 surveys selected, budget EUR 422,000
