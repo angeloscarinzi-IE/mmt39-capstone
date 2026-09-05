@@ -1,0 +1,638 @@
+===============================================================================
+                    MMT39 CAPSTONE — RUNNING SUMMARY LOG
+===============================================================================
+
+  A plain-language record of what was built, what was found, and what it means.
+  Newest entries at the bottom. Read top to bottom for the whole story, or jump
+  to an entry using the index below.
+
+  Every number here reproduces from:  python3 model/mmt39.py --briefing
+
+-------------------------------------------------------------------------------
+  INDEX
+-------------------------------------------------------------------------------
+
+    ENTRY 1 .... The decision model (model/mmt39.py)
+    ENTRY 2 .... The model guide (docs/00-how-to-use-the-model.md)
+    ENTRY 3 .... Reading the briefing output
+    ENTRY 4 .... Doc 01 — Company & Market Dossier
+    ENTRY 5 .... Doc 02 — Edge & Battle Plan
+    ENTRY 6 .... Doc 03 — Decision Checklist & Grading Playbook
+    ENTRY 7 .... Final wrap-up
+
+    APPENDIX A ... Corrections made along the way
+    APPENDIX B ... Open questions for the Simulation Director
+    APPENDIX C ... The numbers you will quote most often
+
+
+===============================================================================
+  ENTRY 1 — THE DECISION MODEL          model/mmt39.py
+===============================================================================
+
+  WHAT IT IS
+  2,650 lines of Python. Zero dependencies. 89 self-tests passing.
+  You give it decisions; it tells you what you can make, what it costs, and
+  what your income statement and balance sheet will look like.
+
+  FIVE COMMANDS YOU CAN RUN TODAY
+
+      python3 model/mmt39.py --selftest      89 checks against the rulebook
+      python3 model/mmt39.py --briefing      every headline number for a deck
+      python3 model/mmt39.py --demo          worked year: P&L, BS, ratios
+      python3 model/mmt39.py --promotions 6  what each promotion type costs
+      python3 model/mmt39.py --breakeven 2.13 0.95 0.60
+
+  THREE THINGS THAT CAME OUT OF BUILDING IT
+
+  1. The break-even calculator revealed a pricing trap.
+     Going from your own sales managers to full wholesalers pushes the minimum
+     viable price from EUR 3.53 to EUR 3.87 - a 10% jump. The wholesaler takes
+     8.46% OF RETAIL PRICE, so every euro you add hands 8.46 cents straight
+     back. Combined with the automatic 4.5% R&D charge, about 13% of every
+     price increase never reaches you.
+
+  2. The demo run failed on purpose, and that is useful.
+     Given deliberately mediocre decisions it lost money both years, flagged an
+     S-line stockout, and forced a EUR 3.1M loan when cash went negative. That
+     is the model behaving correctly - and a preview of what happens to teams
+     that over-invest in sunscreen lines.
+
+  3. The demand fitter passed a test it could not cheat.
+     Fed fabricated data generated from a price elasticity of -1.8 that it was
+     never told, it recovered -1.800. Once Year-1 results land it will extract
+     your real elasticities. It also REFUSES to fit when you have not varied
+     your prices - which is exactly why the ungraded round matters.
+
+  TWO HONEST LIMITATIONS
+
+  - Section 18 says "eight types of promotion" then lists six. The six
+    described are modelled. Ask the Director.
+  - Section 42 says loan repayment is "a proportion" of the opening balance but
+    never defines the proportion. Both readings are implemented; the default is
+    the one that actually clears the debt. Check your first balance sheet
+    against both.
+
+  Wherever the scenario is silent on physics (repair-time savings, last-mile
+  route geometry, average stock levels) it is marked ASSUMPTION in the code
+  with the reasoning, rather than presenting a guess as fact.
+
+
+===============================================================================
+  ENTRY 2 — THE MODEL GUIDE             docs/00-how-to-use-the-model.md
+===============================================================================
+
+  451 lines. Introduction, how to run it, the nine findings it produces, and a
+  17-item action list split into: before Session 2 / during the test round /
+  during the graded round.
+
+  TWO NEW FINDINGS THAT CAME OUT OF WRITING IT
+
+  1. POKA YOKE LOOKS LIKE A TRAP.
+     EUR 720,000 per line. At ten lines running three shifts it adds 630,000
+     units a year - worth about EUR 584,000 of contribution against
+     EUR 7,200,000 of capital.
+
+         PAYBACK: 12.3 YEARS, IN A FOUR-YEAR GAME.
+
+     It sounds like unambiguously good management ("install quality control"),
+     which is exactly why teams will buy it. It is also irreversible.
+
+  2. SMED DEPENDS ENTIRELY ON ONE QUESTION NOBODY HAS ASKED.
+     How many production lines can a single duplicate module serve? The
+     scenario never says. The payback swings enormously:
+
+         Lines per module     Payback        Verdict
+         ----------------     -----------    ----------------
+         1                    14.4 years     Never
+         4                     3.6 years     Marginal
+         8                     1.8 years     Clearly yes
+
+     The physics hints at 8 - servicing takes 5 hours and recurs every 40
+     operating hours - but that is inference, not a stated rule.
+     THIS IS THE HIGHEST-VALUE QUESTION TO PUT TO THE DIRECTOR IN SESSION 2.
+
+  I FOUND TWO ARITHMETIC ERRORS IN MY OWN DRAFT
+  Every figure was run back through the model rather than trusted. Two failed:
+
+  - "The EUR 0.006 logistics benchmark sits 27% above achievable."
+    WRONG - it is 36% MORE. I divided the wrong way. Fixed in three places.
+  - "The cheap-intelligence survey bundle costs EUR 9,000."
+    WRONG - it is EUR 11,000.
+
+  The remaining 50 checks passed exactly.
+
+
+===============================================================================
+  ENTRY 3 — READING THE BRIEFING OUTPUT
+===============================================================================
+
+  THE TWO NUMBERS THAT CONSTRAIN EVERYTHING
+  Your maximum factory (32 lines, 3 shifts, all H) makes 44.4M units against
+  131.3M of H demand - you serve about a third of the market AT BEST. And of
+  the capacity you buy, only 78.75% actually produces.
+
+  Together: every plan is a choice about WHICH demand to serve, and any
+  forecast built on the headline 240k/600k figures is ~21% too optimistic.
+
+  THE LINE ECONOMICS TABLE IS THE YEAR-1 DECISION
+  EUR 3.79 of capital per unit of S capacity against EUR 1.08 for H.
+  EUR 5.13 to make an S unit against EUR 2.13 for H.
+  Lines are irreversible, so whatever mix you pick in year 1 you carry for all
+  four years. Highest-stakes cell on the page.
+
+  THREE LINES ARE FREE MONEY
+  - Factoring instead of borrowing:  EUR 1,500,000 / year on EUR 100M revenue
+  - Depositing idle cash:            EUR 1,350,000 / year
+  - Surveys 20, 21, 22:              every rival's prices, campaigns and
+                                     promotions, for EUR 0
+  None of that requires cleverness. Only that someone does it.
+
+  ONE TRAP IS VISIBLE RIGHT ON THE PAGE
+  Section 10 calls EUR 0.006/unit "reasonable." A 24,000 kg vehicle does
+  EUR 0.0044. Any team that hits the benchmark thinks it optimised while
+  paying 36% over.
+
+  TWO THINGS THE BRIEFING DELIBERATELY DOES NOT TELL YOU
+  - How many units you will sell at a given price. (That is what the test
+    round is for.)
+  - How many lines one SMED module can serve. (Ask the Director.)
+
+
+===============================================================================
+  ENTRY 4 — DOC 01: COMPANY & MARKET DOSSIER
+                                        docs/01-company-and-market-dossier.md
+===============================================================================
+
+  440 lines. All 44 figures verified against the model, zero discrepancies.
+
+  A CHANGE TO THE PLAN: SIX DOCS BECAME THREE
+  You were right that they would overlap. The merges:
+
+      NOW                                     WAS         WHY
+      --------------------------------------  ----------  ---------------------
+      01  Company & Market Dossier            01 + 02     A fact and its verdict
+                                                          are one thought
+      02  Edge & Battle Plan                  03 + 05     A blind spot and its
+                                                          counter are one idea
+      03  Decision Checklist & Grading        04 + 06     Both are things you
+          Playbook                                        run before submitting
+
+  Plus 00-how-to-use-the-model.md. Four files instead of seven.
+
+  HOW IT IS BUILT FOR SPEED
+  Every fact carries a verdict marker so you can skim for what to DO:
+
+      [!]  TRAP           - this will cost you if you miss it
+      [+]  EDGE           - free or near-free advantage most teams will not take
+      [~]  JUDGEMENT CALL - genuinely depends on your strategy
+
+  Everything is tables. The last two sections - "Strengths & Weaknesses at a
+  Glance" and "The Ten Things to Remember" - are the 60-second version.
+
+  THE THREE THINGS IN IT THAT WILL DECIDE YOUR GAME
+
+  1. SECTION 3 IS THE ONE TO READ TWICE.
+     Moisturiser is 3.5x more capital-efficient and 2.4x cheaper to make than
+     sunscreen, and needs roughly half the retail price to break even. That
+     choice is made in year 1 and locked for four years, because lines can
+     never be removed or converted. The single highest-stakes decision in the
+     simulation - and it happens before you have any market feedback.
+
+  2. SECTION 4 CONTAINS THE ERROR MOST TEAMS WILL MAKE.
+     Real capacity is 78.75% of the headline - 175 hours lost to breakdowns and
+     250 to module servicing out of every 2,000. Plan off nameplate and you
+     over-commit by 21%, stock out, and take brand damage that Section 34 says
+     persists beyond the year it happens.
+
+  3. SECTION 8 IS CLOSE TO FREE MONEY.
+     Factoring at 5.5% instead of borrowing at 10% saves EUR 1.5M a year on
+     EUR 100M of revenue. Depositing your idle EUR 54M earns EUR 1.35M.
+
+
+  ---- TABLE ALIGNMENT FIX (applied to docs 00 and 01) ----
+
+  THE PROBLEM
+  Four tables had pipes that did not line up - every one contained an emoji.
+  Emoji occupy two columns on screen but count as one or two characters. You
+  cannot align pipes in both the raw file and a rendered viewer at once.
+
+  THE FIX, IN THREE STEPS
+      1. Wrote a table formatter padding every cell to a common width
+         -> 34 tables reflowed
+      2. Replaced emoji INSIDE tables with [!] [+] [~]
+         -> 25 replacements; every character now exactly one column
+      3. Switched padding from display-width to character count
+         -> pipes align exactly in the raw file
+
+  Emoji still appear in prose and headings, where alignment does not matter.
+
+  VERIFIED PROGRAMMATICALLY: compared the exact character position of every
+  pipe in every row against its header row. 35 tables, 0 misaligned, no wide
+  characters remaining in any cell. The formatter is saved and runs over each
+  new document automatically.
+
+
+===============================================================================
+  ENTRY 5 — DOC 02: EDGE & BATTLE PLAN
+                                        docs/02-edge-and-battle-plan.md
+===============================================================================
+
+  240 lines - about half the length of doc 01. 8 tables aligned. All 33 figures
+  verified, zero discrepancies.
+
+  WHAT IS IN IT
+      1  Where an edge can come from when everyone starts identical
+      2  EIGHT BLIND SPOTS - the number, the rival behaviour, your counter
+      3  Predicted rival moves in year 1, with counters
+      4  Eight experiments to run in the ungraded round
+      5  The four graded years, and the payback rule
+      6  Team split across four departments plus two commonly-dropped jobs
+      7  Eight actions, with timing
+
+  THREE THINGS WORTH PULLING OUT
+
+  1. THE SUNSCREEN TRAP HAS A SECOND HALF.
+     Everyone will notice S is 3.5x more capital-hungry. What they will miss is
+     the consequence: if rivals crowd into sunscreen on instinct, THE
+     MOISTURISER MARKET GETS LESS CONTESTED, NOT MORE - and it is already 2.3x
+     bigger (131.3M vs 56.2M units). The crowd moving one way makes the other
+     way better.
+
+  2. STOCKOUTS ARE A TWO-SIDED EVENT.
+     Section 34 says a stockout damages brand loyalty into later years. So when
+     a rival plans off nameplate capacity and stocks out in year 1, their
+     year-2 demand is already impaired before year 2 starts. Your counter is
+     not just avoiding your own stockout - it is being ready to absorb their
+     share.
+
+  3. THE UNGRADED ROUND IS THE LARGEST FREE EDGE IN THE COURSE.
+     It is graded zero, so most teams will treat it as practice. Its real value
+     is that it is the only place you can run experiments that cost nothing.
+     Section 4 lists eight - deliberately varying prices between markets,
+     deliberately stocking out once to measure what the brand damage actually
+     costs. Without that variation the demand fitter cannot recover a price
+     elasticity, and no method can.
+
+  ONE CAVEAT ON SECTION 3
+  The predicted rival behaviours are HYPOTHESES, NOT FACTS, and are labelled
+  that way in the doc. They are reasoned from what the scenario rewards versus
+  what reads as intuitive. Verify them with the free surveys after year 1
+  before betting more capital on them.
+
+
+===============================================================================
+  ENTRY 6 — DOC 03: DECISION CHECKLIST & GRADING PLAYBOOK
+                    docs/03-decision-checklist-and-grading-playbook.md
+===============================================================================
+
+  311 lines, 11 tables. 32 rule facts checked against the model - every legal
+  range, every rate, every limit. Zero errors.
+
+  IT IS TWO TOOLS IN ONE FILE
+
+  PART A - THE DECISION CHECKLIST
+     A0  The five silent killers
+     A1  Marketing        (8 decisions)
+     A2  Operations       (13 decisions)
+     A3  Logistics        (8 decisions)
+     A4  Human resources  (10 decisions)
+     A5  Finance          (9 decisions) + the OCN formula
+     A6  Pre-submission checklist - 12 tick-boxes
+
+  PART B - THE GRADING PLAYBOOK
+     B1  Where the marks actually are
+     B2  The two rules that silently cost marks
+     B3  The CEO deck skeleton + all 18 analysis and 8 planning items
+     B4  The final report structure
+     B5  Meeting-day routine
+
+  THREE THINGS WORTH PULLING OUT
+
+  1. FIVE FIELDS PRODUCE ZERO SALES IF LEFT BLANK - WITH NO WARNING.
+     Leave out a price (Sec.14), a retailer margin (Sec.20), or a shelf-space
+     figure (Sec.21) and the simulator silently assumes you do not want to sell
+     in that channel. Forget to ACTIVATE a line (Sec.22) - not just install it -
+     and it produces nothing. Skip the advertising campaign (Sec.17) and you get
+     a neutral, undefined brand position.
+
+     No error message. No warning. Just no sales.
+     That is why A6 exists and why one named person should own it.
+
+  2. THE RUBRIC TELLS YOU EXACTLY WHAT TO PUT ON EACH SLIDE.
+     The evaluation guidelines list 18 numbered analysis items and 8 numbered
+     planning items. Most teams will write a deck they think looks good. Doc 03
+     maps every numbered item to the specific chart or table it wants, and to
+     the model function that produces it. It is a fill-in-the-blanks structure
+     for a document that is 40% + 25% of your grade.
+
+  3. "ESTABLISH THE CAUSES" IS IN CAPITALS IN THE GUIDELINES, AND IT IS THE
+     WHOLE GAME.
+     Scores badly:  "Market share fell to 12%."
+     Scores well:   "Share fell 4 points because our GRPs dropped 30% while
+                     Company B raised theirs 50% - survey 11 confirms it."
+     Same fact. Completely different mark. Every number in the model carries its
+     section reference, so when the CEO challenges you, you point at the rule.
+
+  ONE STRUCTURAL POINT ABOUT THE GRADE
+  Only 10% of your grade is the simulated result. 65% is analysis quality,
+  presentation and how your teammates rate you. Winning the market is neither
+  sufficient nor the main lever - DEMONSTRABLY KNOWING WHY it moved is.
+  And: missing one CEO meeting = zero for that meeting. Missing two = automatic
+  fail.
+
+
+===============================================================================
+  ENTRY 7 — FINAL WRAP-UP
+===============================================================================
+
+  WHAT WAS ADDED LAST
+     README.md    The front door. A "start here" table telling each teammate
+                  what to read depending on whether they have 5 minutes or an
+                  hour, plus the verification status.
+     CLAUDE.md    Project memory, so any future session starts already knowing
+                  the framing and the no-invented-numbers rule.
+
+  THE CROSS-DOCUMENT CONSISTENCY PASS
+  A checker was written that takes every key figure and asks two questions:
+  does it match the model, and does it agree with itself everywhere it appears?
+
+     39 figures checked across 5 documents ......... ALL CONSISTENT
+     Superseded figures found only in labelled
+       correction logs, never as live guidance ..... CONFIRMED
+
+  It also flagged five apparent problems that turned out to be FALSE POSITIVES -
+  old figures sitting inside correction tables where they belong. The checker
+  was fixed rather than the documents. A checker that cries wolf is worse than
+  no checker.
+
+  Two genuine issues were found and fixed:
+     - SUMMARIES.txt used the superseded EUR 1.87 as a command-line example
+       where the guide correctly used EUR 2.13.
+     - README claimed 54 aligned tables; the real count is 58.
+
+  ONE FALSE ALARM WORTH RECORDING
+  A test loop reported three model commands as FAILED. They were not broken -
+  zsh does not word-split unquoted variables, so the loop passed
+  "--promotions 6" as a single argument and argparse rejected it. The commands
+  all run clean. The test harness was wrong, not the model.
+
+  FINAL STATE
+
+     Model self-tests ............................ 89 passing
+     CLI commands ................................ 8 of 8 run clean
+     Figures verified against the model .......... 100+
+     Cross-document consistency .................. ALL CONSISTENT
+     Markdown tables ............................. 58 aligned, 0 misaligned
+     Numbers invented ............................ ZERO
+
+  WHAT TO DO NEXT
+
+     1. Read README.md, then SUMMARIES.txt Appendix C.
+     2. Run:  python3 model/mmt39.py --briefing
+     3. Take the four Appendix B questions to Session 2. The SMED one is worth
+        the most money.
+     4. Assign the four departments plus the two cross-cutting jobs
+        (competitive intelligence, submission check) - doc 02 section 6.
+     5. Design the test-round experiments - doc 02 section 4. That round is
+        graded zero, so it is free information, and most teams will waste it.
+
+  THE ONE THING TO REMEMBER
+  Only 10% of the grade is the simulated result. 65% is analysis quality,
+  presentation and peer feedback. Every figure in this pack carries its section
+  reference precisely so that when the CEO challenges a number, you point at the
+  rule it came from. That is the difference between defending a forecast and
+  defending a guess.
+
+
+===============================================================================
+  ENTRY 8 — SYNOPTIC OVERVIEW, COORDINATOR'S EMAIL, AND THE WORKBOOK
+===============================================================================
+
+  THE TIMELINE IS MUCH TIGHTER THAN ASSUMED
+     Before Saturday ... test BOTH the C1 and C2 credentials
+     Saturday ......... Round 1, the TEST cycle (C1)
+     Sunday onwards ... Round 2, the GRADED cycle (C2)
+
+  The test round is ONE DAY, not weeks. Everything about it being free
+  information still holds, but the experiments must be designed in advance.
+  And decisions are submitted in the SIMULATOR INTERFACE — nothing typed into
+  Excel ever reaches the simulator.
+
+  TWO OPEN QUESTIONS ANSWERED BY THE SYNOPTIC — BOTH FAVOURABLY
+
+  1. "One SMED unit can be used for several lines."
+     This was the highest-value unknown in the game, and it settles in the good
+     direction. 2 SMED units for 14 H lines = EUR 6M, PAYBACK 2.1 YEARS.
+     Combined with a third shift that is +81% output on the SAME lines. Buying
+     14 more lines for comparable output would cost EUR 21M.
+     SMED IS A BUY, IN YEAR 2.
+
+  2. The eight promotion types are explained: price reduction, 3-for-2,
+     discount on next purchase, raffle, ONE direct bonus, and THREE indirect
+     bonuses (the three gift options). 1+1+1+1+1+3 = 8. Nothing was missing —
+     the model was right, just counting differently.
+
+  THREE RULES THAT ARE NOT IN THE 57-PAGE SCENARIO AT ALL
+
+  1. DUMPING IS BANNED — "you cannot sell below production cost plus the
+     retailer margin." Floor is EUR 3.08 for H, EUR 7.03 for S. Note that
+     break-even (EUR 4.10 / EUR 8.24) is higher, so break-even is what actually
+     binds. The dumping rule only matters in a price war.
+  2. POINT-OF-SALE ADVERTISING IS CAPPED at EUR 500,000 per channel per year.
+  3. LOAN TERMS SHORTEN each simulation year. Borrowing late is repaid faster.
+
+  THE POSITIONING MAP AXES ARE GIVEN AWAY
+     Section 17 says the axes are unlabelled and "require interpretation, as it
+     would happen in real life." The synoptic prints them:
+         X = NATURAL          Y = TECHNOLOGICAL
+     And the segments map onto them: 40% Natural, 40% Technological, 20%
+     neither. Teams reading only the main scenario will burn the test round
+     trying to infer this from a scatter plot.
+     RECOMMENDED: H -> campaign 19 (aloe vera, "most natural of creams") for the
+     Natural 40%; S -> campaign 18 ("Technology for your skin") for the
+     Technological 40%. That splits the two big segments between your two
+     products instead of making them fight over one.
+
+  A TRAP HIDING IN THE WORKSHEET TEMPLATE ITSELF
+     The template ships pre-filled with example logistics values: 10 vehicles at
+     12,000 kg, 30 at 1,500 kg.
+         Template default, factory->platform ... EUR 384,000 per market
+         Correctly sized (1 veh @ 14,328 kg) ... EUR  41,194 per market
+     That is 9.3x too much. Across A and B, leaving the defaults in place burns
+     roughly EUR 687,000 A YEAR for nothing.
+
+  THE WORKBOOK BUILT FOR YOU
+     "WST MMT39 - ANGELO TEAM - all years.xlsx" — a copy of the coordinator's
+     template with SEVEN SHEETS:
+         Test Y1  advertising experiment (A full spend, B half, same prices)
+         Test Y2  price experiment (+10% both markets, advertising equalised)
+         Year 1   commit the irreversible line mix, plan at 78.75%
+         Year 2   3rd shift + SMED: +81% output, no new lines
+         Year 3   expand ONLY if years 1-2 sold out
+         Year 4   harvest, no new irreversible capex
+         Template (blank)  pristine
+     Every decision cell filled, and a NOTES column (M) explaining each choice
+     with its scenario reference. Delete that column before handing anything in.
+
+  ONE THING I CORRECTED WHILE BUILDING IT
+     My geometric estimator for platform-to-retailer routes was returning
+     169-hour routes and a cost 21x the scenario's own EUR 0.007 benchmark. The
+     scenario never fixes retailer spacing, so the geometry had nothing under
+     it. Rather than ship a confident wrong number I added size_from_benchmark()
+     which inverts the problem — size the fleet to hit the published benchmark,
+     then correct from year-1 actuals — and left a loud warning on the old
+     function. This is the honest answer, not the impressive-looking one.
+
+  ALSO CHANGED: PREVENTIVE MAINTENANCE NOW RECOMMENDED FROM YEAR 1
+     At the recommended plant it adds ~653,000 units worth ~EUR 624,000 against
+     its EUR 500,000 cost. It is also REVERSIBLE, unlike every other
+     productivity decision. With PM on, Year-1 output is 774,480 S and
+     13,553,400 H, and standard cost falls to EUR 4.93 / EUR 2.06.
+
+
+===============================================================================
+  APPENDIX A — CORRECTIONS MADE ALONG THE WAY
+===============================================================================
+
+  Kept deliberately, so you never quote a superseded number in a CEO meeting.
+
+  1. VEHICLE SIZING
+     Said:  "Always max out vehicle load capacity."
+     Right per vehicle, WRONG as a fleet plan. Cost collapses to
+     24,000 x trucks + 0.0024 x units - the per-kilo part cancels once the
+     fleet covers your volume.
+     CORRECT RULE: use as FEW trucks as possible, then size each to fit your
+     volume exactly. Buying 24,000 kg trucks when 20,000 kg fits costs 10%
+     more for nothing.
+
+  2. STANDARD COSTS
+     Said:  S = EUR 4.29,  H = EUR 1.87
+     NOW:   S = EUR 5.13,  H = EUR 2.13
+     Why: now includes scrap and breakdown repair costs (Section 24).
+
+  3. CAPEX PER UNIT OF CAPACITY
+     Said:  S = EUR 2.92,  H = EUR 0.83
+     NOW:   S = EUR 3.79,  H = EUR 1.08
+     Why: now measured against SELLABLE output, not nameplate.
+
+     Conclusions unchanged - H is still 3.5x better on capital and 2.4x
+     cheaper to run. Quote the corrected figures.
+
+  4. LOGISTICS BENCHMARK GAP
+     Said:  "27% above achievable"
+     NOW:   "36% more than achievable"  (0.006 / 0.0044 = 1.36)
+
+  5. CHEAP SURVEY BUNDLE
+     Said:  EUR 9,000
+     NOW:   EUR 11,000  (surveys 23 + 28 + 1 + 2 + 27)
+
+
+===============================================================================
+  APPENDIX B — OPEN QUESTIONS FOR THE SIMULATION DIRECTOR
+===============================================================================
+
+  Ask these in Session 2. Ranked by how much money the answer moves.
+
+  1. HOW MANY PRODUCTION LINES CAN ONE SMED DUPLICATE MODULE SERVE?
+     Swings SMED between a 14.4-year and a 1.8-year payback. Highest-value
+     unknown in the game.
+
+  2. DOES POKA YOKE CARRY ANY BENEFIT BEYOND SCRAP AND REPAIR TIME?
+     On the documented effects alone it pays back in 12.3 years and should be
+     skipped. A brand or quality effect would change that.
+
+  3. SECTION 18 SAYS EIGHT PROMOTION TYPES BUT LISTS SIX. WHAT ARE THE OTHER
+     TWO?
+
+  4. SECTION 42: WHAT PROPORTION OF THE LOAN BALANCE REPAYS EACH YEAR?
+     "A proportion" is undefined. Changes every cash forecast.
+
+  5. WHICH READING OF SECTION 24 DOES THE SIMULATOR USE?
+     The 40-hour module counter has two readings, 3% apart. Settles itself once
+     you see year-1 actuals.
+
+
+===============================================================================
+  APPENDIX C — THE NUMBERS YOU WILL QUOTE MOST OFTEN
+===============================================================================
+
+  OPENING POSITION (Sec. 1)
+     Fixed assets            EUR  12,000,000
+     Cash                    EUR  54,000,000    (82% of the balance sheet)
+     Equity                  EUR  66,000,000    (can never be increased, Sec.37)
+
+  MARKET SIZE, UNITS PER YEAR (Sec. 2 x Sec. 3)
+                    A            B            E            TOTAL
+     S       12,100,000    9,000,000   35,100,000       56,200,000
+     H       29,260,000   27,000,000   75,000,000      131,260,000
+     E is 62% of S demand and 57% of H demand.
+     H is 2.3x the size of S.
+
+  LINE ECONOMICS, 3 SHIFTS (Sec. 22, 23, 30, 33)
+                                    S              H
+     Cost to install         EUR 2,100,000  EUR 1,500,000
+     Nameplate/shift/yr           240,000        600,000
+     SELLABLE at 3 shifts         554,400      1,386,000
+     Capex per unit          EUR      3.79  EUR      1.08
+     Standard cost           EUR      5.13  EUR      2.13
+     Break-even (own force)  EUR      7.99  EUR      3.86
+     Break-even (wholesale)  EUR      8.77  EUR      4.23
+
+  CAPACITY REALITY (Sec. 23, 24)
+     Scheduled per line-shift-year          2,000 h
+     - breakdown repair                      -175 h   (-8.8%)
+     - main-module servicing                 -250 h   (-12.5%)
+     = ACTUALLY PRODUCING                   1,575 h   (78.75%)
+     With SMED                              1,825 h   (91.25%, +15.9%)
+
+     Per line-shift, plan on:  S = 184,800    H = 462,000
+
+  MEDIA COST PER 1% OF BUYERS REACHED (Sec. 15, 16)
+        A / B (EUR)          E (USD)
+        TV      300.0        TV      327.9
+        Press   312.5        Radio   400.0
+        Display 357.1        Display 423.1
+        Radio   400.0        Press   516.1
+        Social  500.0        Social  517.2
+     TV is cheapest in both. Social is dearest in both (+67% A/B, +58% E).
+
+  LOGISTICS (Sec. 10)
+     Vehicle cost = 24,000 + 1.2 x kg ;  1 kg = 2 units ;  8 h routes
+     24,000 kg full ->  EUR 0.0044 / unit
+      1,000 kg full ->  EUR 0.0504 / unit    (11x worse)
+     Rulebook "reasonable" benchmark 0.006 -> costs 36% more than achievable
+     Fleet cost = 24,000 x vehicles + 0.0024 x units
+
+  FINANCING (Sec. 39, 44, 49)
+     Deposit / investment    2.5% EARNED
+     Factoring               5.5% paid    <- cheapest working capital
+     Credit line             7.0% paid  (+1% service, +1% upfront)
+     Bank loan              10.0% paid  (+1% upfront, 4-yr maturity)
+     Overdraft              20.0% paid   <- NEVER
+
+  UNAVOIDABLE FIXED COSTS
+     Office payroll     EUR 2,413,092 .. 3,371,620   (56 people, Sec. 29)
+     General overhead   EUR   600,000                (Sec. 29)
+     R&D                4.5% OF REVENUE, automatic   (Sec. 36)
+     Depreciation       8% / 10% / 12% by shift count (Sec. 35)
+
+  MARKET RESEARCH (Sec. 50)
+     FREE:      20 (rival prices), 21 (campaigns), 22 (promotion types)
+     EUR 11,000 bundle: 23 net income, 28 shifts, 1+2 market sales,
+                        27 platforms
+     EUR 110,000: survey 19 - the only way to see demand you failed to serve
+     Whole menu: EUR 1,003,400 (not sensible)
+
+  GRADING (evaluation guidelines)
+     Individual work & presentations   40%
+     Teamwork                          25%
+     Peer feedback                     15%
+     Final report                      10%
+     Company results                   10%   <- only a tenth is the result
+     Analysis MUST establish CAUSES, not describe outcomes.
+     Each member's role must be identified in every deck handed in.
+
+
+===============================================================================
+                            END OF SUMMARY LOG
+===============================================================================

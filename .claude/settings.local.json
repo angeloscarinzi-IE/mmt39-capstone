@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 mmt39.py --selftest)",
+      "Bash(python3 model/mmt39.py --briefing)",
+      "Bash(python3 -)"
+    ]
+  }
+}

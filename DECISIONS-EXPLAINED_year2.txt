@@ -1,0 +1,607 @@
+###############################################################################
+#          D E C I S I O N S   E X P L A I N E D   —   Y E A R   2            #
+#     Simulation B1SIM2C1 · Company 3 · COMPANY_3 · Year 2 [Active]           #
+#     REVISED against the actual Year 1 results reports.                      #
+###############################################################################
+
+   🔴 trap · 🟢 free win · 🟡 judgement call · 🔵 action · 📌 memorise
+
+###############################################################################
+  PART 1  —  WHAT ACTUALLY HAPPENED IN YEAR 1
+###############################################################################
+
+  WE FINISHED 2nd on accumulated profit AND 2nd on net income.
+  Net income EUR 4,919,135 · ROE 6.94% vs industry average 0.91%.
+
+  Our forecast was accurate on the things we controlled:
+
+     | Item              | Forecast   | ACTUAL     | Diff   |
+     | ----------------- | ---------- | ---------- | ------ |
+     | S units sold      |    774,480 |    780,000 |  +0.7% |
+     | H units sold      | 13,553,400 | 13,650,000 |  +0.7% |
+     | Revenue           | 71,850,446 | 73,108,602 |  +1.8% |
+     | Standard cost H   |      2.063 |     2.1788 |  +5.6% |
+     | Standard cost S   |      4.934 |     5.5371 | +12.2% |
+     | Operating income  |  8,570,606 |  8,214,100 |  -4.2% |
+     | NET INCOME        |  8,286,977 |  4,919,135 | -40.6% |
+
+  Operating income landed within 4%. Net income missed by 41% — ENTIRELY below
+  the operating line. Two things caused it.
+
+  🔴 FINDING 1 — WE MASSIVELY UNDER-SUPPLIED THE MARKET
+
+     | Product | Units SOLD | Units DEMANDED | Served | MISSED     |
+     | ------- | ---------- | -------------- | ------ | ---------- |
+     | S       |    780,000 |      8,419,028 |   9.3% |  7,639,028 |
+     | H       | 13,650,000 |     31,966,201 |  42.7% | 18,316,201 |
+     | TOTAL   | 14,430,000 |     40,385,229 |  35.7% | 25,955,229 |
+
+     📌 DEMAND WAS 2.8x OUR ENTIRE OUTPUT. Finished goods inventory closed at
+        ZERO for both products. We sold every single unit we could make.
+     📌 THIS MEANS WE WERE UNDERPRICED, NOT OVER-PRICED. The market wanted 10.8x
+        more sunscreen and 2.3x more moisturiser than we could deliver.
+
+  🔴 FINDING 2 — A 10x RAW MATERIAL ORDERING ERROR
+
+     Units purchased of H raw material: 130,600,000.  Required: ~13,923,000.
+
+     | Consequence                        | EUR          |
+     | ---------------------------------- | ------------ |
+     | Raw material left in stock         | 109,431,358  |
+     | Cash and equivalents at 31 Dec     | -33,411,377  |
+     | Overdraft interest                 |    1,892,199 |
+     | Loan interest                      |      382,605 |
+     | Credit line interest               |      244,193 |
+     | Factoring                          |      537,708 |
+     | Fees                               |      238,260 |
+     | TOTAL FINANCIAL EXPENSES           |    3,294,965 |
+
+     📌 That is 40% of our operating income destroyed by one data entry.
+        Payables of H stand at EUR 30,622,435 and must be paid.
+
+  🔴 FINDING 3 — LOGISTIC STOCKOUTS IN BOTH MARKETS
+
+     | Market | Factory -> Platform | Platform -> Retailer |
+     | ------ | ------------------- | -------------------- |
+     | A      | No                  | YES                  |
+     | B      | YES                 | YES                  |
+
+     Platform-to-retailer cost came in at EUR 2,506,409 on 14,430,000 units =
+     EUR 0.1737/unit against the EUR 0.007 benchmark — 25 TIMES OVER. We planned
+     one vehicle per market; the logistics company supplied the rest at
+     emergency rates.
+     🔵 One extra PLANNED vehicle costs EUR 36,000. Under-provisioning cost us
+        EUR 2.4 million. Over-provisioning is 67x cheaper than the mistake.
+
+  🟢 FINDING 4 — THE VOLUME DISCOUNT WAS REAL
+     H raw material cost EUR 0.9379/unit against the EUR 1.05 list price. The
+     enormous order earned a 10.7% discount. It does not remotely justify the
+     error, but the 116,677,000 units we hold are cheap units.
+
+  ⬜ FINDING 5 — OUR CHANNEL ASSUMPTION WAS WRONG
+     I assumed sunscreen would lean to pharmacies. It did not. SUPERMARKETS
+     dominate both products:
+
+     | Channel | S actual | H actual |
+     | ------- | -------- | -------- |
+     | AG      |     7.4% |     7.3% |
+     | AS      |    28.0% |    25.0% |
+     | AT      |    12.6% |    11.5% |
+     | BG      |     3.7% |     5.3% |
+     | BS      |    36.2% |    37.9% |
+     | BT      |    12.0% |    13.1% |
+
+     Market B supermarkets alone are over a third of both products. All Year 2
+     forecasts below use these ACTUAL weights.
+
+  ⬜ FINDING 6 — TURNOVER COST US EUR 306,000
+     4 office staff and 7 sales staff left. Cost: EUR 96,000 + EUR 210,000.
+     The training department was OFF in Year 1.
+
+###############################################################################
+  PART 2  —  THE YEAR 2 STRATEGY:  ENTER MARKET E AND BUILD OUT
+###############################################################################
+
+  This is a TEST RUN, so we use it to run the experiment that matters most:
+  ENTER MARKET E AND EXPAND THE FACTORY TO THE 32-LINE LIMIT.
+
+  THE LOGIC, IN ORDER
+
+  1. WE ARE CAPACITY-BOUND, NOT DEMAND-BOUND. Year 1 demand was 40,385,229
+     units against 14,430,000 of output. Entering E without adding capacity
+     would just move units between markets. So E and expansion go together or
+     not at all.
+
+  2. E PAYS MORE PER UNIT THAN A OR B. Income there is $46,000 against
+     EUR 27,000 in A and EUR 35,000 in B, so it carries higher prices even after
+     the export chain and customs:
+
+     | Line        | Price | Margin | Contribution per unit |
+     | ----------- | ----- | ------ | --------------------- |
+     | H market A  |  5.35 |   0.95 |                 1.671 |
+     | H market B  |  5.70 |   0.95 |                 2.005 |
+     | H market E  |  6.90 |   1.80 |                 2.226 |
+     | S market A  | 15.60 |   1.90 |                 6.679 |
+     | S market B  | 16.50 |   1.90 |                 7.539 |
+     | S market E  | 19.50 |   3.60 |                 8.553 |
+
+     Export costs are small: EUR 0.024/unit plus 2% customs = EUR 0.0743 on H
+     and EUR 0.1509 on S. E also needs NO SALES REPS — it has only channel G,
+     200 hypermarkets, handled by the sales manager (S6).
+
+  3. LINES PAY BACK IN UNDER SIX MONTHS AT THE NEW PRICES.
+        1 S line: 670,860 units x EUR 6.679 = EUR 4,480,805/yr on EUR 2,100,000
+                  -> PAYBACK 0.47 YEARS
+        1 H line: 1,677,150 units x EUR 1.671 = EUR 2,801,684/yr on EUR 1,500,000
+                  -> PAYBACK 0.54 YEARS
+
+  4. THE YEAR-1 MISTAKE PAYS FOR THE H EXPANSION. We hold 116,677,000 units of H
+     raw material. The expanded plant needs 40,478,400. WE BUY NONE, and still
+     have 76,198,600 left over. The over-order that wrecked Year 1 is what makes
+     Year 2's expansion affordable.
+
+  🔴 WHY THIS IS SAFE EVEN IF E DISAPPOINTS
+
+     | E capture | E H units  | E S units | Revenue     | Net income  | Unsold     |
+     | --------- | ---------- | --------- | ----------- | ----------- | ---------- |
+     | 100%      | 15,934,087 |   784,142 | 338,622,637 | 101,124,726 |          0 |
+     | 75%       | 11,950,565 |   588,106 | 307,313,646 |  90,253,394 |  4,179,557 |
+     | 50%       |  7,967,043 |   392,071 | 276,004,656 |  79,382,062 |  8,359,114 |
+     | 25%       |  3,983,522 |   196,035 | 244,695,666 |  68,510,730 | 12,538,671 |
+     | 0%        |          0 |         0 | 213,386,675 |  57,639,399 | 16,718,229 |
+
+     📌 EVEN IF WE SELL NOTHING AT ALL IN E, net income is about EUR 57,639,399
+        against Year 1's EUR 4,919,135. The A+B price rises and the third shift
+        carry the plan on their own. Anything E delivers is upside.
+     📌 Unsold units become finished-goods inventory. They never deteriorate and
+        are sold first the following year (S3). THE DOWNSIDE IS WORKING CAPITAL,
+        NOT LOSS — which is exactly what makes this a sound experiment.
+
+  🟡 THE TWO ASSUMPTIONS I CANNOT GROUND
+     · Price elasticity of -1.5. Used to predict how far A+B demand falls when we
+       raise prices. Not measured, assumed.
+     · A 21.2% share of E's moisturiser market in our first year there, against
+       three entrenched local brands (J, K, L) and any other team that enters.
+       Optimistic. The table above is why being wrong is survivable.
+
+###############################################################################
+  PART 3  —  THE DECISIONS  (market E included)
+###############################################################################
+
+  ─────────────────────────────────────────────────────────────────────────────
+  1. COMMERCIAL DISTRIBUTION
+  ─────────────────────────────────────────────────────────────────────────────
+
+     | Number of sales managers per market |                |
+     | Market                              | Sales Managers |
+     | ----------------------------------- | -------------- |
+     | A                                   | 6              |
+     | B                                   | 6              |
+     | E                                   | 12             |
+
+     🔵 ALL 12 ZONES IN E, OWN-MANAGED. E costs $60,000 per manager against
+        EUR 50,000 in A and B, so 12 managers is EUR 720,000. But E needs NO
+        SALES REPS at all — it has only channel G, 200 hypermarkets, and the
+        manager handles that channel directly (S6). In A and B the reps cost us
+        EUR 2,856,000. E is the cheapest market to staff.
+     🔵 Wholesalers would take 8.46% of E revenue. On the projected E revenue
+        that is far more than EUR 720,000.
+     🔴 Resets to 0 every year. Re-enter all three markets.
+
+  ─────────────────────────────────────────────────────────────────────────────
+  2. LOGISTICS
+  ─────────────────────────────────────────────────────────────────────────────
+
+     | Number of platforms |        |
+     | Market              | Number |
+     | ------------------- | ------ |
+     | A                   | 12     |
+     | B                   | 12     |
+     | E                   | 24     |
+
+     | Transport to Plataforms |                    |                    |
+     | Market                  | Load Capacity (Kg) | Number of Vehicles |
+     | ----------------------- | ------------------ | ------------------ |
+     | A                       | 22,000             | 2                  |
+     | B                       | 20,000             | 2                  |
+     | E                       | 24,000             | 3                  |
+
+     | Transport to Retailers |                    |                    |
+     | Market                 | Load Capacity (Kg) | Number of Vehicles |
+     | ---------------------- | ------------------ | ------------------ |
+     | A                      | 10,000             | 10                 |
+     | B                      | 10,000             | 10                 |
+     | E                      | 10,000             | 12                 |
+
+     🔴 WE STOCKED OUT ON THREE OF FOUR DOMESTIC LEGS IN YEAR 1 and paid
+        EUR 2,506,409 for last-mile transport instead of roughly EUR 100,000 —
+        25 times the benchmark, because the logistics company supplied emergency
+        vehicles. One PLANNED vehicle costs EUR 36,000. Over-provisioning is
+        67 times cheaper than the mistake we made.
+     🔵 Volume nearly triples this year (14.4M -> 45.6M units), so capacities
+        rise accordingly. E gets 3 vehicles at maximum load on the long leg and
+        12 on the last mile for its 200 hypermarkets across 12 zones.
+     🔵 PLATFORMS 6 -> 12 in A and B, 24 in E. Platform count is nearly free
+        (about EUR 200 a year per market in order charges) but it shortens
+        last-mile routes. Year 1 proved this is a SERVICE decision, not a cost
+        one — and our service failed.
+     ⬜ E adds a fixed EUR 0.024/unit export chain to the main platform, plus 2%
+        customs on (standard cost + 0.024) in own-manager zones (S9).
+
+  ─────────────────────────────────────────────────────────────────────────────
+  3. HUMAN RESOURCES
+  ─────────────────────────────────────────────────────────────────────────────
+
+     | Office and management staff payroll |            |
+     | Level                               | Salary (€) |
+     | ----------------------------------- | ---------- |
+     | Level I                             | 130,000    |
+     | Level II                            | 87,000     |
+     | Level III                           | 62,000     |
+     | Level IV                            | 36,500     |
+
+     | Production personnel wages |            |
+     | Level                      | Salary (€) |
+     | -------------------------- | ---------- |
+     | Operator                   | 14,200     |
+     | Specialist                 | 24,500     |
+
+     | Creation of the recruitment and training department | CHECKED (Yes) |
+
+     | Sales reps per zone |         |             |
+     | Market              | Channel | Sales force |
+     | ------------------- | ------- | ----------- |
+     | A                   | S       | 5           |
+     | A                   | T       | 4           |
+     | B                   | S       | 5           |
+     | B                   | T       | 3           |
+
+     | Sales reps salary     |        |
+     | --------------------- | ------ |
+     | Fixed salary A (€)    | 28,000 |
+     | Variable salary A (%) | 0.6    |
+     | Fixed salary B (€)    | 28,000 |
+     | Variable salary B (%) | 0.6    |
+
+     🔵 SALARIES UP MODESTLY. Year 1 lost 4 office staff and 7 sales staff,
+        costing EUR 306,000. The sales-force number is the worrying one — those
+        are the people who generate demand in channels S and T.
+     🔵 TRAINING DEPARTMENT ON (EUR 722,000). Headcount roughly triples with 32
+        lines on three shifts, so the replacement cost it avoids grows with it.
+        Reversible if Year 2 turnover does not improve.
+     🔵 MORE REPS IN SUPERMARKETS. Channel S is 28-38% of our volume — the
+        largest by far — and we staffed it with only 4 and 2 per zone.
+     ⬜ NO REPS FOR MARKET E. It has only channel G, handled by the manager.
+        This is the single biggest cost advantage of the E entry.
+
+  ─────────────────────────────────────────────────────────────────────────────
+  4. MARKET RESEARCH
+  ─────────────────────────────────────────────────────────────────────────────
+
+     | Survey ID | Cost (€) | Selected | Why                                    |
+     | --------- | -------- | -------- | -------------------------------------- |
+     | 1         | 3,000    | Yes      | S sales by market                      |
+     | 2         | 3,000    | Yes      | H sales by market                      |
+     | 3         | 36,000   | Yes      | sales by company and market            |
+     | 4         | 72,000   | Yes      | sales by company, market AND channel   |
+     | 12        | 36,000   | Yes      | ADVERTISING BY E DOMESTIC COMPANIES    |
+     | 15        | 72,000   | Yes      | shelf space achieved                   |
+     | 17        | 24,000   | Yes      | AVERAGE OVERSEAS PRICES                |
+     | 18        | 36,000   | Yes      | TOTAL OVERSEAS SALES BY ALL COMPANIES  |
+     | 19        | 110,000  | Yes      | demand vs sales — sizes Year 3 capacity|
+     | 20        | 0        | Yes      | rival retail prices (free)             |
+     | 21        | 0        | Yes      | rival advertising campaigns (free)     |
+     | 22        | 0        | Yes      | rival promotion types (free)           |
+     | 23        | 1,000    | Yes      | rival net income                       |
+     | 24        | 10,000   | Yes      | industry average production cost       |
+     | 25        | 5,000    | Yes      | industry average salary cost           |
+     | 26        | 10,000   | Yes      | industry balance sheets                |
+     | 27        | 3,000    | Yes      | platforms by company                   |
+     | 28        | 1,000    | Yes      | rival production shifts                |
+     | all others|          | No       |                                        |
+
+     Total research budget: 422,000 €
+
+     🔵 THREE SURVEYS ADDED SPECIFICALLY BECAUSE WE ARE ENTERING E: 12
+        (advertising by the E domestic companies), 17 (average overseas prices)
+        and 18 (total overseas sales by everyone). We are walking into a market
+        with three entrenched local brands we know nothing about. EUR 96,000 to
+        see their prices, their advertising and the true size of the prize is
+        the best-value spend on the whole sheet.
+     🔵 Survey 19 (EUR 110,000) still matters most overall — it tells us how much
+        demand we STILL cannot serve, which sizes the Year 3 decision.
+     📌 EUR 422,000 is 0.1% of projected revenue.
+
+  ─────────────────────────────────────────────────────────────────────────────
+  5. PRICES
+  ─────────────────────────────────────────────────────────────────────────────
+
+     | Product | Market | Channel | M.S.R.P (€) | Margin (€) |
+     | ------- | ------ | ------- | ----------- | ---------- |
+     | S       | A      | G       | 15.60       | 1.90       |
+     | S       | A      | S       | 16.00       | 1.90       |
+     | S       | A      | T       | 17.50       | 1.90       |
+     | S       | B      | G       | 16.00       | 1.90       |
+     | S       | B      | S       | 16.50       | 1.90       |
+     | S       | B      | T       | 17.25       | 1.90       |
+     | S       | E      | G       | 19.50       | 3.60       |
+     | H       | A      | G       | 5.35        | 0.95       |
+     | H       | A      | S       | 5.50        | 0.95       |
+     | H       | A      | T       | 5.80        | 0.95       |
+     | H       | B      | G       | 5.50        | 0.95       |
+     | H       | B      | S       | 5.70        | 0.95       |
+     | H       | B      | T       | 6.00        | 0.95       |
+     | H       | E      | G       | 6.90        | 1.80       |
+
+     📌 S UP 50% AND H UP 20% IN A AND B. E PRICED ABOVE BOTH.
+
+     🔵 THE EVIDENCE FOR RAISING. Demand exceeded supply 10.8x for S and 2.3x
+        for H, and closing inventory was ZERO for both. We sold out at every
+        price point. Raising price captures margin without needing capacity or
+        cash.
+     🔵 E CARRIES A PREMIUM because income there is $46,000 against EUR 27,000 in
+        A and EUR 35,000 in B. The Year-1 sheet already had E priced at
+        EUR 11.99 for S and EUR 6.49 for H with zero shelf space, so nothing
+        sold — the pricing instinct was right, the shelf-space entry was the
+        blocker.
+     ⬜ Standard cost at the larger plant: S EUR 6.319, H EUR 2.489. Dumping
+        floors are EUR 8.22 for S and EUR 3.44 for H. Every price clears both.
+
+  ─────────────────────────────────────────────────────────────────────────────
+  6. PROMOTIONS
+  ─────────────────────────────────────────────────────────────────────────────
+
+     | Product | Market | Channel | No. promotions | Type | Detail |
+     | ------- | ------ | ------- | -------------- | ---- | ------ |
+     | H       | E      | G       | 2              | 5    | 3      |
+     | all other rows                | 0              | -    | -      |
+
+     🔵 PROMOTIONS ONLY IN E, AND ONLY ON MOISTURISER. Everywhere else demand
+        already exceeds what we can supply, so buying more demand is waste — and
+        S48 says the market REJECTS promotions you cannot serve.
+     🔵 E is the exception: we are unknown there, competing against three
+        established local brands, and we need trial. Type 5 is the direct
+        promotional bonus at about EUR 0.40 per unit — roughly 6% of the E price
+        and the cheapest of the eight types. A 3-for-2 would be a 33% discount.
+
+  ─────────────────────────────────────────────────────────────────────────────
+  7. ADVERTISING
+  ─────────────────────────────────────────────────────────────────────────────
+
+     | Advertising Campaign |        |                  |
+     | Product              | Market | Type of campaign |
+     | -------------------- | ------ | ---------------- |
+     | S                    | A      | 18               |
+     | S                    | B      | 18               |
+     | S                    | E      | 18               |
+     | H                    | A      | 19               |
+     | H                    | B      | 19               |
+     | H                    | E      | 19               |
+
+     | Repetitions |        |         |                 |
+     | Product     | Market | Vehicle | No. Repetitions |
+     | ----------- | ------ | ------- | --------------- |
+     | S           | A      | DR      | 0               |
+     | S           | A      | PR      | 1               |
+     | S           | A      | RA      | 0               |
+     | S           | A      | SM      | 0               |
+     | S           | A      | TV      | 2               |
+     | S           | B      | DR      | 0               |
+     | S           | B      | PR      | 1               |
+     | S           | B      | RA      | 0               |
+     | S           | B      | SM      | 0               |
+     | S           | B      | TV      | 2               |
+     | S           | E      | DR      | 0               |
+     | S           | E      | PR      | 1               |
+     | S           | E      | RA      | 1               |
+     | S           | E      | SM      | 0               |
+     | S           | E      | TV      | 2               |
+     | H           | A      | DR      | 0               |
+     | H           | A      | PR      | 3               |
+     | H           | A      | RA      | 0               |
+     | H           | A      | SM      | 0               |
+     | H           | A      | TV      | 5               |
+     | H           | B      | DR      | 0               |
+     | H           | B      | PR      | 3               |
+     | H           | B      | RA      | 0               |
+     | H           | B      | SM      | 0               |
+     | H           | B      | TV      | 5               |
+     | H           | E      | DR      | 0               |
+     | H           | E      | PR      | 3               |
+     | H           | E      | RA      | 1               |
+     | H           | E      | SM      | 0               |
+     | H           | E      | TV      | 5               |
+
+     🔵 A AND B CUT, E FUNDED. In A and B we still generate far more demand than
+        we can serve, so advertising there is trimmed. In E we are unknown and
+        need reach from a standing start, so it is funded properly.
+     ⬜ E MEDIA COSTS AND REACH DIFFER FROM A AND B. Television is still the
+        cheapest reach ($327.9 per point against $517.2 for social), but RADIO
+        IS RELATIVELY STRONGER IN E — 40% reach against 35% in A and B — so it
+        earns a place in the E mix where it does not at home.
+     🔴 SOCIAL MEDIA STAYS AT ZERO EVERYWHERE. Dearest per point of reach in
+        both territories.
+     ⬜ Campaigns 18 and 19 carry over to E. The three local brands J, K and L
+        sit on E's three biggest segments (S17), so we are deliberately taking a
+        clear Technological position for S and Natural for H rather than
+        competing head-on in the middle.
+
+  ─────────────────────────────────────────────────────────────────────────────
+  8. TRADE  (shelf space and point-of-purchase)
+  ─────────────────────────────────────────────────────────────────────────────
+
+     | Product | Market | Channel | Shelf space (%) | P.O.P Ad. (€) |
+     | ------- | ------ | ------- | --------------- | ------------- |
+     | S       | A      | G       | 15              | 3,000         |
+     | S       | A      | S       | 18              | 3,000         |
+     | S       | A      | T       | 15              | 3,000         |
+     | S       | B      | G       | 15              | 3,000         |
+     | S       | B      | S       | 18              | 3,000         |
+     | S       | B      | T       | 15              | 3,000         |
+     | S       | E      | G       | 12              | 25,000        |
+     | H       | A      | G       | 20              | 4,000         |
+     | H       | A      | S       | 22              | 4,000         |
+     | H       | A      | T       | 20              | 4,000         |
+     | H       | B      | G       | 20              | 4,000         |
+     | H       | B      | S       | 22              | 4,000         |
+     | H       | B      | T       | 20              | 4,000         |
+     | H       | E      | G       | 15              | 40,000        |
+
+     🔴 THIS IS THE FIELD THAT KILLED MARKET E IN YEAR 1. We entered prices and
+        margins for E but left SHELF SPACE AT ZERO, so the simulator assumed we
+        did not want the channel and sold nothing (S21). If you fill in only one
+        thing from this document, fill in this.
+     🔵 E asks for a MODEST 12-15%. We are new there against three established
+        brands, and S21 warns that an excessive ask makes the retailer "react
+        negatively". Build it in Year 3 once we have sales history in E.
+     🔵 E gets real point-of-purchase money (EUR 25,000-40,000) while A and B
+        stay low. In E we are buying visibility from nothing; at home we are
+        already turning demand away.
+
+  ─────────────────────────────────────────────────────────────────────────────
+  9. PRODUCTION   ** THE BIG EXPANSION **
+  ─────────────────────────────────────────────────────────────────────────────
+
+     | Production lines |                 |                     |             |                       |
+     | Product          | Installed lines | To install this year| Total lines | Lines to be activated |
+     | ---------------- | --------------- | ------------------- | ----------- | --------------------- |
+     | S                | 2               | 6                   | 8           | 8                     |
+     | H                | 14              | 10                  | 24          | 24                    |
+
+     | Number of production shifts               | 3         |
+     | Preventive maintenance department         | CHECKED   |
+     | Installation of PY quality control system | UNCHECKED |
+
+     | Supply managment |                            |                             |                               |
+     | Product          | Inventory of raw materials | Inventory of finished goods | Raw materials to be purchased |
+     | ---------------- | -------------------------- | --------------------------- | ----------------------------- |
+     | S                | 0 U.                       | 0 U.                        | 5,397,120                     |
+     | H                | 116,677,000 U.             | 0 U.                        | 0                             |
+
+     | SMED Systems  |                     |            |                      |                              |
+     | SMED previous | SMED to be acquired | Total SMED | SMED to be activated | Teams assigned to SMED/shift |
+     | ------------- | ------------------- | ---------- | -------------------- | ---------------------------- |
+     | 0             | 3                   | 3          | 3                    | 3                            |
+
+     📌 FILL THE FACTORY: 8 S + 24 H = the 32-line maximum. Capex EUR 33,600,000.
+        Output rises from 14,430,000 units to 45,618,480.
+
+     🔵 WHY 6 NEW S LINES. Sunscreen demand was 8,419,028 against 780,000 of
+        output — we served 9.3%. At the new EUR 15.60-19.50 prices an S line
+        earns EUR 4,480,805 a year on EUR 2,100,000 of capex: PAYBACK 0.47
+        YEARS. S is now our most profitable product per line.
+     🔵 WHY 10 NEW H LINES. H demand was 31,966,201 against 13,650,000. An H line
+        earns EUR 2,801,684 on EUR 1,500,000: PAYBACK 0.54 YEARS.
+     🟢 BUY ZERO H RAW MATERIAL. The expanded plant consumes 40,478,400 units and
+        we hold 116,677,000. We buy none and still finish with 76,198,600 in
+        stock. THE YEAR-1 ERROR IS WHAT PAYS FOR THE H EXPANSION.
+     🔵 S RAW MATERIAL 5,397,120 UNITS (EUR 9,018,588). We hold none, and eight
+        S lines need feeding. Do not repeat Year 1 — CHECK THIS NUMBER TWICE
+        BEFORE SUBMITTING.
+     🟢 SMED RAISED TO 3 UNITS (EUR 9,000,000) for 32 lines, with 3 teams per
+        shift. The synoptic confirms one unit serves several lines.
+     🔴 POKA YOKE STILL NO. EUR 720,000 PER LINE — at 32 lines that is
+        EUR 23,040,000 for a 12-year payback.
+     🔴 "LINES TO BE ACTIVATED" RESETS TO ZERO. Installed is not activated.
+
+  ─────────────────────────────────────────────────────────────────────────────
+  10. FINANCE
+  ─────────────────────────────────────────────────────────────────────────────
+
+     | Loan requested:               | 35,000,000 € |
+     | Loan prepayment:              | 0 €          |
+     | Financial investments:        | 0 €          |
+     | Fixed-term deposit:           | 0 €          |
+     | Line of credit requested:     | 10,000,000 € |
+
+     | Customers payment terms:      | 60 Days |
+     | Factoring:                    | CHECKED |
+     | Max. Amount to be discounted: | 0 €     |
+
+     | Suppliers payment terms |        |
+     | Product                 | Period |
+     | ----------------------- | ------ |
+     | S                       | 120    |
+     | H                       | 120    |
+
+     | Investment in securities |                  |               |
+     | Security                 | Amount to invest | Sell Security |
+     | 1                        | 0 €              | unchecked     |
+     | 2                        | 0 €              | unchecked     |
+     | 3                        | 0 €              | unchecked     |
+
+     🔵 REQUEST THE LOAN DELIBERATELY — EUR 35,000,000. Capex of EUR 33,600,000
+        plus EUR 9,018,588 of S raw material must be paid in cash (S37), against
+        a balance sheet that starts about EUR 70,300,000 short once payables,
+        loans and the credit line settle. Year 1 taught us the lesson the
+        expensive way: if you do not request the loan, THE SIMULATOR REQUESTS IT
+        FOR YOU, and if cash still goes negative you pay 20% OVERDRAFT — which
+        cost us EUR 1,892,199. A planned 10% loan is half the price of an
+        unplanned 20% overdraft.
+     🔵 CREDIT LINE EUR 10,000,000 on top, as the buffer. It charges only on what
+        is drawn.
+     🔴 NO FIXED-TERM DEPOSIT. In Year 1 we deposited EUR 15,000,000 at 2.5%
+        WHILE PAYING 20% ON AN OVERDRAFT. That was my recommendation and it was
+        wrong. Never hold a 2.5% asset against a 20% liability.
+     🔵 SUPPLIER TERMS 120 DAYS on both products — the cheapest financing
+        available, and we are barely buying raw material anyway.
+     🟢 FACTORING ON. 5.5% against 10%.
+
+###############################################################################
+  PART 4  —  WHAT THIS PLAN SHOULD DELIVER
+###############################################################################
+
+     | Metric              | Year 1 actual | Year 2 projected |
+     | ------------------- | ------------- | ---------------- |
+     | Total units sold    |    14,430,000 |       45,618,480 |
+     | Markets served      |         A, B  |         A, B, E  |
+     | Revenue             |    73,108,602 |     ~338,600,000 |
+     | Gross margin        |    21,765,673 |     ~141,200,000 |
+     | Operating income    |     8,214,100 |     ~105,100,000 |
+     | Net income          |     4,919,135 |     ~101,100,000 |
+     | ROE                 |         6.94% |            ~143% |
+
+     🟡 Treat this as the upper case. It assumes we capture 21.2% of E's
+        moisturiser market in our first year there. The sensitivity table in
+        Part 2 shows the floor: EUR 57,639,399 of net income even if E delivers
+        NOTHING. Both ends beat Year 1 by an order of magnitude.
+
+###############################################################################
+  PART 5  —  WHAT I GOT WRONG, KEPT ON THE RECORD
+###############################################################################
+
+     | My Year 1 advice          | What actually happened                       |
+     | ------------------------- | -------------------------------------------- |
+     | Deposit EUR 15,000,000    | We paid 20% overdraft while earning 2.5%     |
+     | 1 vehicle per leg         | Stockouts on 3 of 4 legs, EUR 2.4M wasted    |
+     | 6 platforms is enough     | True on cost, false on service               |
+     | S leans to pharmacies     | Supermarkets dominate both products          |
+     | Raise advertising reach   | Right in isolation, wrong when supply-bound  |
+     | Prices near break-even    | We were underpriced by a factor of 2-10x     |
+
+     The common thread: I optimised each decision against COST when the binding
+     constraint was CAPACITY. Every calculation was arithmetically right and
+     several were strategically wrong. Year 2 corrects for that.
+
+
+###############################################################################
+  PART 6  —  BEFORE YOU SUBMIT
+###############################################################################
+
+     [ ] Sales managers 6 / 6 / 12 — resets to zero every year
+     [ ] MARKET E SHELF SPACE IS NOT ZERO — this is what killed E in Year 1
+     [ ] E prices AND margins AND shelf space all filled for S and H
+     [ ] "Lines to be activated" set to 8 and 24 — it resets to zero
+     [ ] Lines to install: 6 S and 10 H
+     [ ] H raw material to purchase is ZERO
+     [ ] S raw material 5,397,120 — CHECK THE DIGITS, this is what went wrong
+     [ ] Shifts 3, preventive maintenance CHECKED, Poka Yoke UNCHECKED
+     [ ] SMED: acquire 3, activate 3, 3 teams per shift
+     [ ] All salaries re-entered — they reset to the legal minimum
+     [ ] Logistics overwritten in ALL THREE markets now, including E
+     [ ] 10 last-mile vehicles in A and B, 12 in E — not 1
+     [ ] Loan of EUR 35,000,000 requested DELIBERATELY
+     [ ] No fixed-term deposit
+     [ ] Credit line EUR 10,000,000
+     [ ] Supplier terms 120 days both products
+     [ ] 18 surveys selected, budget EUR 422,000
