@@ -64,25 +64,28 @@ explained against. Grading of these choices is in `08-YEAR-2-DECISION-REVIEW.md`
 
 ## Derived figures
 
-| Item                          | Value                                                         |
-| ----------------------------- | ------------------------------------------------------------- |
-| Capex                         | €6,000,000 — 2 SMED modules at €3,000,000 (§27)               |
-| Planned output S              | 6,688,800 = 10 lines × 3 shifts × 240,000 × 0.929             |
-| Planned output H              | 3,344,400 = 2 lines × 3 shifts × 600,000 × 0.929              |
-| Standard cost S / H with SMED | €5.1358 / €2.2051 (Year 1: €5.5604 / €2.3252)                 |
-| H available to sell           | 17,628,699 in stock + 3,344,400 made = **20,973,099**         |
-| Raw material check S          | model 6,524,226 · entered 6,578,235 · **+54,009** `[~]`       |
-| Raw material check H          | model 3,411,288 · entered 3,446,019 · **+34,731** `[~]`       |
-| §41 operating cash needed     | €9,686,287 against €32,610,895 available after the prepayment |
-| Net rating (unchanged media)  | S 99.99% · H 99.86%, both markets                             |
-| Line slots used               | **32 of 32** — 12 activated, 20 H lines idle                  |
+| Item                          | Value                                                                                 |
+| ----------------------------- | ------------------------------------------------------------------------------------- |
+| Capex                         | €6,000,000 — 2 SMED modules at €3,000,000 (§27)                                       |
+| Planned output S              | 6,688,800 = 10 lines × 3 shifts × 240,000 × 0.929                                     |
+| Planned output H              | 3,344,400 = 2 lines × 3 shifts × 600,000 × 0.929                                      |
+| Standard cost S / H with SMED | €5.1358 / €2.2051 (Year 1: €5.5604 / €2.3252)                                         |
+| H available to sell           | 17,628,699 in stock + 3,344,400 made = **20,973,099**                                 |
+| Raw material check S          | 6,675,000 x 1.02 x **1.01 buffer** less 298,350 opening = 6,578,235 — **exact** `[+]` |
+| Raw material check H          | 3,345,000 x 1.02 x **1.01 buffer** = 3,446,019 — **exact** `[+]`                      |
+| §41 operating cash needed     | €9,686,287 against €32,610,895 available after the prepayment                         |
+| Net rating (unchanged media)  | S 99.99% · H 99.86%, both markets                                                     |
+| Line slots used               | **32 of 32** — 12 activated, 20 H lines idle                                          |
 
-`[~]` The two raw-material entries sit **above** the calibrated requirement
-(production × 1.02 less opening stock at 92.9% utilisation). They imply 93.64% for S and
-93.85% for H. Either the sheet was built at a slightly higher SMED yield than the test
-round measured, or the field is the simulator's own pre-fill. The error is in the safe
-direction — §28 penalises **under**-buying at 15%, over-buying only ties up €129,350 of
-working capital that carries into Year 3 — so it needs noting, not correcting.
+`[+]` **Both raw-material entries reproduce exactly** as `production x 1.02 scrap x 1.01 safety
+buffer, less opening stock`, on planned output of 6,675,000 S and 3,345,000 H. The 1% buffer is
+deliberate and right: §28 penalises **under**-buying at 15%, while over-buying only carries into
+next year's stock.
+
+The planned output rounds SMED utilisation to 92.708% (S) and 92.917% (H) against the measured
+**92.9%**, so calibrated output is 6,688,800 and 3,344,400 — 13,800 and 600 units above plan.
+The buffer absorbs that with 54,009 and 34,731 units of raw material to spare, so there is **no
+shortfall risk**. Forecasts below use the calibrated figures.
 
 ## Forecast lodged before the result
 

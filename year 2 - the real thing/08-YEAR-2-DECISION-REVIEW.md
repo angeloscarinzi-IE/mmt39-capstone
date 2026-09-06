@@ -30,7 +30,7 @@ large lever left, and it is the one being under-used.**
 | 7   | Credit line             | €10,000,000 → €0          | A−    | +€200,000         | Saves the 2% undrawn fee; leaves no backstop but the trough is €32M deep           |
 | 8   | H price, market A       | 6.50 → **7.50**           | A−    | +€2,250,000       | Right direction, right size — but see note 12                                      |
 | 9   | Advertising, shelf, POP | all held                  | B+    | control           | Correct: net rating is already ~100%, and holding them keeps the price read clean  |
-| 10  | Raw material entries    | S 6,578,235 · H 3,446,019 | B+    | −€129,350         | ~1% above the calibrated need — over-buying is the safe error (§28) `[~]`          |
+| 10  | Raw material entries    | S 6,578,235 · H 3,446,019 | A     | insurance         | Exactly production x 1.02 x 1.01; the 1% buffer absorbs the SMED rounding `[+]`    |
 | 11  | Fixed-term deposit      | €10,000,000               | B+    | +€250,000         | Right instrument, undersized against a year that closes near €120M of cash         |
 | 12  | Logistics trim          | 50 → 42 last-mile         | B−    | +€170,400         | Load per vehicle rises 20.7% with no measured headroom `[!]`                       |
 | 13  | Promotion design        | both markets, channel S   | C+    | −€339,000         | Needs a 13.6% uplift to break even, and running both markets destroyed the control |
