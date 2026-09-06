@@ -7,5 +7,17 @@ __pycache__/
 Scenario MMT39 .pdf
 Synoptic overview MMT39.pdf
 1 2026 MIM DD C1 EN.pdf
+2 MIM intro to the simulation.pdf
+3 2026 MIM DD C2 EN MMT39.pdf
+4 2026 MIM evaluation guidelines.pdf
 capstone evaluaion guidelines.pdf
 WST MMT39 EN v269.xlsx
+
+# Simulator-generated report sheets and decision-screen captures.
+# Same class: Praxis output, and they carry other companies' figures.
+DIR*.pdf
+DIR*.XLSX
+DIR*.xlsx
+*.jpeg
+*.jpg
+*.png

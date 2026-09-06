@@ -526,6 +526,75 @@
      Said:  EUR 9,000
      NOW:   EUR 11,000  (surveys 23 + 28 + 1 + 2 + 27)
 
+  ---------------------------------------------------------------------------
+  MEASURED AGAINST THE GRADED YEAR-1 RESULT SHEET (6 September 2026)
+  Everything below is no longer inferred from the rulebook. It is fitted to
+  simulation B1SIM2C2 and reproduces the report to the euro (32/32 checks in
+  model/calibration.py). Where these disagree with anything above, these win.
+  ---------------------------------------------------------------------------
+
+  6. STANDARD COSTS, AGAIN
+     Said:  S = EUR 5.13,  H = EUR 2.13   (rulebook inference)
+     Then:  S = EUR 5.5174, H = EUR 2.2928 (test-round calibration)
+     NOW:   S = EUR 5.5604, H = EUR 2.3252 at 120-day supplier terms, EXACT
+     Why: raw material is billed at list x 1.03 on 120-day terms and x 1.02
+     for yield; power is billed at 1.764582 x the Information-screen rate.
+
+  7. POWER MULTIPLIER
+     Said:  1.70 (fitted to the test round, 0.03% error)
+     NOW:   1.764582 (solved jointly with the repair constant, zero error)
+
+  8. REPAIR COST PER LINE-SHIFT
+     Said:  EUR 16,828.70 = 70 breakdowns x 2.5 h x 4 x 24.041
+            ("preventive maintenance does NOT reduce this")
+     NOW:   EUR 12,224.10 = 127.12 h x 4 x 24.041
+     Why: preventive maintenance appears to remove the 0.5 h detection and
+     0.5 h preparation on the 70% of breakdowns it foresees. So preventive
+     maintenance pays TWICE - utilisation AND the repair bill.
+
+  9. LINE UTILISATION PLANNING FIGURE
+     Said:  78.75% (Sections 23-24 inference), plan on 184,800 / 462,000
+     NOW:   81.25% exactly with preventive maintenance, i.e. 195,000 S and
+     487,500 H sellable units per line-shift. Confirmed twice.
+
+ 10. SUPPLIER PAYMENT TERMS
+     Said:  free - the term was assumed to cost nothing
+     NOW:   120 days costs 3.00% of raw material, 90 days 1.27%.
+     Year 1 paid EUR 1,343,918 for float worth EUR 384,510.
+
+ 11. VEHICLE COST
+     Said:  24,000 + 1.2 x load capacity, as billed
+     NOW:   HALF that, in any year with no stockout flag. A flag adds an
+     unmodelled emergency premium (test Y2: +EUR 1,527,519).
+
+ 12. DEPRECIATION BASE
+     Said:  total fixed assets
+     NOW:   lines and SMED only, at GROSS value. Land and buildings are
+     never depreciated. EUR 6,480,000 = 12% x 54,000,000.
+
+ 13. LOAN INTEREST AND MATURITY
+     Said:  interest on the opening balance; maturity 3 years
+     NOW:   interest on the full drawn balance in the draw year
+     (EUR 2,600,000 = 10% x 26,000,000); maturity 4 years in the graded
+     round. Re-read the Information screen every year.
+
+ 14. RECEIVABLES BASIS
+     Said:  2/12 of sales at MSRP
+     NOW:   2/12 of NET revenue. Retailer margins are paid immediately.
+
+ 15. TRAINING DEPARTMENT
+     Said:  "worth it once payroll is large enough"
+     NOW:   NO, at this payroll. It cuts office turnover from EUR 24,000 to
+     EUR 9,000 a leaver - four leavers, EUR 60,000 - and costs EUR 722,000.
+     It does nothing for sales-rep turnover, which is 4.5x larger.
+
+ 16. DEMAND ANCHORS
+     Said:  test-round market shares (H: A 68.6% at 5.25, B 55.1% at 7.75)
+     NOW:   graded Year-1 brand demand IN UNITS. S 7,677,440 at 14.50 flat;
+     H market A 4,556,494 at 6.50, market B 9,989,807 at 7.50.
+     Why: the test round was a different simulation instance with different
+     Director factors, and its share figures mixed two incompatible bases.
+
 
 ===============================================================================
   APPENDIX B — OPEN QUESTIONS FOR THE SIMULATION DIRECTOR

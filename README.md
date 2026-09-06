@@ -96,13 +96,14 @@ All figures are checked automatically, not by eye:
 
 | Check                                                     | Result                      |
 | --------------------------------------------------------- | --------------------------- |
-| Model self-tests against the rulebook                     | **89 passing**              |
+| Calibration against the actual result sheets              | **32 of 32, exact**         |
+| Model self-tests against the rulebook                     | **100 passing**             |
 | Figures in docs matching the model                        | **all verified**            |
 | Same figure agreeing across every document                | **all consistent**          |
 | Superseded figures appearing only in labelled corrections | **confirmed**               |
 | Markdown table alignment                                  | **58 tables, 0 misaligned** |
 
-Re-run any time with `python3 model/mmt39.py --selftest`.
+Re-run any time with `python3 model/calibration.py` and `python3 model/mmt39.py --selftest`.
 
 ---
 
@@ -118,3 +119,22 @@ Re-run any time with `python3 model/mmt39.py --selftest`.
 *Built from the source PDFs before Session 2. AI assistance was used to compute and structure this
 material; every figure traces to a numbered section of the scenario and is reproducible from
 `model/mmt39.py`.*
+
+---
+
+## Current state — 6 September 2026
+
+Test round complete (2 virtual years). Graded round **Year 1 results received — 1st of 5 on
+both rankings, net income €67,823,192.** Year 2 decisions entered; results pending.
+
+| Start here                                                  | For                                                        |
+| ----------------------------------------------------------- | ---------------------------------------------------------- |
+| `year 2 - the real thing/README.md`                         | everything from Year 2 onward — the working index          |
+| `year 2 - the real thing/08-YEAR-2-DECISION-REVIEW.md`      | the Year-2 decisions, graded, with the money behind each   |
+| `year 2 - the real thing/00-CALIBRATION-CONSTANTS.md`       | the measured constants, now exact against the real report  |
+| `year 2 - the real thing/anthony results + review/`         | the full Year-1 results analysis and competitor brief      |
+| `day 2 - real thing/FINDINGS FROM TEST FOR THE REAL RUN.md` | what the test round measured (superseded where they clash) |
+| `model/calibration.py`                                      | the calibrated engine. **Outranks `model/mmt39.py`**       |
+
+Two Claude Code skills load automatically: `mmt39-decisions` for building a year's sheet,
+`mmt39-results` for processing a results sheet.

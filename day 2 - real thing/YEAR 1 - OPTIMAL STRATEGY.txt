@@ -1,0 +1,944 @@
+###############################################################################
+#                                                                             #
+#        M M T 3 9   G R A D E D   R O U N D   —   Y E A R   1                #
+#                    T H E   O P T I M A L   S T R A T E G Y                  #
+#                                                                             #
+#   Every field of the decision interface, in the order the interface asks    #
+#   for it, with the value to enter and why. Built on the measured constants  #
+#   in FINDINGS FROM TEST FOR THE REAL RUN.md, not on the scenario as read.   #
+#                                                                             #
+#   Written 6 September 2026. Company 3. Markets A and B only.                #
+#                                                                             #
+###############################################################################
+
+  [!] trap   [+] free win   [~] judgement call     (markers inside tables)
+  Emoji in prose only. Every figure recomputed from the Year-1 test actuals.
+
+  ONE-SENTENCE STRATEGY
+  ---------------------------------------------------------------------------
+  Be the premium-positioned volume producer in A and B: price at the market
+  instead of at break-even, buy three shifts instead of extra lines, fund the
+  last mile properly, and spend nothing on remedies for problems we measured
+  and found to be small.
+
+  WHAT CHANGED SINCE THE TEST ROUND, IN FOUR LINES
+  ---------------------------------------------------------------------------
+  1. We were underpriced by roughly 45% on moisturiser. Price is fixed first.
+  2. Real utilisation is 81.25%, not 78.75%. Every capacity number moves.
+  3. Three shifts cost 2 points of depreciation; the lines they replace cost
+     EUR 18,300,000. Three shifts, always.
+  4. The last mile is a EUR 1.5M fixed cost, not a EUR 72,000 one. Fund it.
+
+
+###############################################################################
+  0  —  THE PLAN ON ONE PAGE
+###############################################################################
+
+| Item                    | Year 1 plan     | Test round Y1  | Change   |
+| ----------------------- | --------------- | -------------- | -------- |
+| Production lines        | 6 S + 16 H      | 2 S + 14 H     | +6 lines |
+| Shifts                  | 3               | 2              | +1       |
+| Output, units           | 26,910,000      | 14,430,000     | +86%     |
+| Average price, H        | EUR 7.33        | EUR 4.73       | +55%     |
+| Average price, S        | EUR 12.96       | EUR 11.01      | +18%     |
+| Retail revenue          | EUR 217,000,891 | EUR 73,108,602 | +197%    |
+| Net revenue             | EUR 184,240,891 | EUR 58,659,102 | +214%    |
+| Operating income        | EUR 85,472,595  | EUR 8,214,100  | +940%    |
+| NET INCOME              | EUR 85,372,595  | EUR 4,919,135  | +1,635%  |
+| ROE on closing equity   | 56.4%           | 6.94%          | +49 pts  |
+| Loan required           | EUR 0           | EUR 3,826,050  | none     |
+| Capex                   | EUR 36,600,000  | EUR 25,200,000 | +45%     |
+| Break-even sell-through | 14.97%          | n/a            |          |
+
+  Nothing in this plan needs a loan, an overdraft, factoring or a deposit.
+  Break-even is 14.97% of the plant — the test round sold more than that at
+  half these prices.
+
+
+###############################################################################
+  1  —  COMMERCIAL DISTRIBUTION
+###############################################################################
+
+| Number of sales managers per market |     |
+| ----------------------------------- | --- |
+| Market A                            | 6   |
+| Market B                            | 6   |
+| Market E                            | 0   |
+
+  WHY
+  ---------------------------------------------------------------------------
+  ✅ Own every zone. Priced on the Year-1 actuals, the own network cost
+     EUR 4,377,791 against EUR 6,184,988 for wholesalers at 8.46% of retail —
+     an advantage of EUR 1,807,197. That advantage GROWS with price, because
+     the wholesaler takes a percentage of retail while our network is almost
+     entirely fixed. At this year's EUR 217,000,891 of retail sales, wholesalers
+     would cost EUR 18,358,275 against EUR 5,957,882 for our own people.
+
+  ⚠️ The Year-1 pack claimed the advantage was EUR 2,517,165. It was wrong: it
+     costed the last mile at EUR 6,000 a zone when the real figure is about
+     EUR 125,000. The conclusion survives; the arithmetic did not.
+
+  ⚖️ Market E stays at 0. A+B baseline demand is 77,360,000 units against our
+     26,910,000 of output, so E adds nothing we can serve. Revisit in Year 2
+     with survey 19 in hand. This field RESETS to 0 every year — re-enter it.
+
+
+###############################################################################
+  2  —  LOGISTICS
+###############################################################################
+
+| Number of platforms |                    |
+| ------------------- | ------------------ |
+| Market A            | 12                 |
+| Market B            | 12                 |
+| Market E            | leave default (60) |
+
+| Transport to platforms | Load capacity (kg) | Number of vehicles |
+| ---------------------- | ------------------ | ------------------ |
+| Market A               | 16,000             | 2                  |
+| Market B               | 20,000             | 2                  |
+| Market E               | leave default      | leave default      |
+
+| Transport to retailers | Load capacity (kg) | Number of vehicles |
+| ---------------------- | ------------------ | ------------------ |
+| Market A               | 4,000              | 30                 |
+| Market B               | 4,000              | 22                 |
+| Market E               | leave default      | leave default      |
+
+  FACTORY TO PLATFORMS — the rule is now confirmed, so this leg is solved
+  ---------------------------------------------------------------------------
+  Annual capacity per vehicle = 500 x load capacity in kg. It predicted both
+  Year-1 outcomes exactly: market A carried 6,340,088 units on 8,500,000 of
+  capacity and did not stock out; market B carried 8,089,912 on 7,500,000 and
+  did.
+
+| Market | Units to ship | Fleet         | Capacity   | Headroom | Cost       |
+| ------ | ------------- | ------------- | ---------- | -------- | ---------- |
+| A      | 11,912,819    | 2 x 16,000 kg | 16,000,000 | 34%      | EUR 86,400 |
+| B      | 14,997,181    | 2 x 20,000 kg | 20,000,000 | 33%      | EUR 96,000 |
+
+  ⚖️ One vehicle cannot do market A: the 24,000 kg legal maximum gives
+     12,000,000 units against 11,912,819 needed — 0.7% of headroom, which is
+     not headroom. Two vehicles each is the minimum, and it is cheap.
+
+  ⚠️ Note market B is the LARGER market for us, not A. In the test round B took
+     56.1% of our units on a smaller population. We sized A bigger last time
+     and B is what stocked out.
+
+  PLATFORM TO RETAILERS — the EUR 2.4M mistake, corrected
+  ---------------------------------------------------------------------------
+  This leg is driven by DROPS, not tonnage. Retailers order weekly (S12), so:
+
+| Market | Retailers | Drops/yr | Hours per drop | Vehicle-hours | Vehicles |
+| ------ | --------- | -------- | -------------- | ------------- | -------- |
+| A      | 3,815     | 198,380  | 0.288          | 57,132        | 28.6     |
+| B      | 2,190     | 113,880  | 0.325          | 36,972        | 18.5     |
+
+  🔴 In the test round we planned ONE vehicle per market and were charged
+     EUR 2,506,409 — EUR 0.1737 per unit against the EUR 0.007 guideline. The
+     planned fleet above costs EUR 1,497,600, which is EUR 0.0557 per unit.
+
+  ⚖️ 4,000 kg rather than 1,500: at this year's volume market B moves 132 units
+     per drop, so a 1,500 kg vehicle would run out of weight before it ran out
+     of hours. 4,000 kg carries 8,000 units, about 60 drops per route.
+
+  📌 The template default is 30 vehicles at 1,500 kg. On this leg the template
+     was roughly RIGHT and our "optimisation" to one vehicle was what cost the
+     money. Do not repeat that override.
+
+  PLATFORMS: 12, NOT 6 AND NOT 36
+  ---------------------------------------------------------------------------
+  ⚖️ Platform count is nearly free on the order charge (EUR 0.65 per order) and
+     shortens last-mile routes, but we have never tested whether STORAGE cost
+     scales with it. Warehouse cost was EUR 279,306 at 6 platforms. Doubling to
+     12 halves route length by about 30% and, if storage does scale, costs at
+     most another EUR 280,000. Read the warehouse line in the Year-1 results
+     before going to 36 in Year 2. This is a deliberate, bounded experiment.
+
+  🔴 Market E: leave the template defaults exactly as they are. The interface
+     says so in writing — "if your company is not operating in a market ... no
+     cost will be allocated for this concept" — and the test round confirmed it:
+     we left E at 60 platforms and 40 vehicles and were charged nothing.
+     Zero is not a legal entry.
+
+
+###############################################################################
+  3  —  HUMAN RESOURCES
+###############################################################################
+
+| Office and factory staff salaries |         |
+| --------------------------------- | ------- |
+| Level I                           | 126,000 |
+| Level II                          | 84,000  |
+| Level III                         | 60,000  |
+| Level IV                          | 35,000  |
+| Operator                          | 13,500  |
+| Specialist                        | 24,000  |
+
+| Recruitment and training department | No  |
+| ----------------------------------- | --- |
+
+| Sales reps per zone | Channel | Sales force |
+| ------------------- | ------- | ----------- |
+| Market A            | S       | 4           |
+| Market A            | T       | 4           |
+| Market B            | S       | 3           |
+| Market B            | T       | 3           |
+
+| Sales force salary | Fixed (EUR) | Variable (%) |
+| ------------------ | ----------- | ------------ |
+| Market A           | 26,000      | 0.60         |
+| Market B           | 26,000      | 0.60         |
+
+  WHY EVERY SALARY STAYS EXACTLY WHERE IT WAS
+  ---------------------------------------------------------------------------
+  This is the section where the test round paid for itself, by proving that
+  three expensive remedies are not worth buying.
+
+| Remedy                    | Annual cost | Measured problem            | Verdict |
+| ------------------------- | ----------- | --------------------------- | ------- |
+| Selection & training dept | 722,000     | 336,000 of turnover cost    | [!] no  |
+| Office pay up ~5%         | 147,000     | 96,000, 4 leavers @ 24,000  | [!] no  |
+| Rep pay 26,000 -> 28,000  | 168,000     | 210,000, 7 leavers @ 30,000 | [~] no  |
+| Production pay up ~4%     | 729,000     | nothing measurable          | [!] no  |
+
+  📌 THE PRODUCTION-WAGE FINDING IS THE IMPORTANT ONE. Section 31 warns that low
+     pay causes absenteeism, which lowers productivity and raises unit cost. At
+     operator EUR 13,500 and specialist EUR 24,000 the plant produced EXACTLY
+     81.25% of nameplate — the theoretical maximum. There was no productivity
+     loss to buy off. With 2,130 production staff at 22 lines on three shifts,
+     holding the line here is worth about EUR 729,000 and it keeps the standard
+     cost down, because these wages sit INSIDE the standard cost.
+
+  ⚖️ Reps: market B ran HALF of market A's sales force in the test round and
+     outsold it by 28.8%. So we hold A at its tested 4+4 and lift B from 2+2 to
+     3+3, because B is our stronger market and was the more thinly staffed.
+     84 reps at EUR 26,000 = EUR 2,184,000 fixed, plus 0.6% variable.
+
+  📌 Commission is paid on price-to-retailer, on channels S and T ONLY —
+     hypermarket volume is commission-free. Verified: 0.6% of S+T net revenue is
+     EUR 310,685, which is the exact figure the simulator charged in Year 1.
+     Our variable bill this year: EUR 976,282.
+
+  🔴 Every salary field RESETS to the legal minimum each year. Re-enter all six.
+
+
+###############################################################################
+  4  —  RESEARCH
+###############################################################################
+
+| Survey | Cost (EUR) | Take | What it buys                                   |
+| ------ | ---------- | ---- | ---------------------------------------------- |
+| 1      | 3,000      | Yes  | S sales by market                              |
+| 2      | 3,000      | Yes  | H sales by market                              |
+| 3      | 36,000     | Yes  | sales by company and market                    |
+| 4      | 72,000     | Yes  | sales by company, market AND channel           |
+| 8      | 59,900     | Yes  | positioning map of H brands [+] the top driver |
+| 11     | 36,000     | Yes  | insertions by company — share of voice         |
+| 15     | 72,000     | Yes  | shelf space ACHIEVED — never measured          |
+| 19     | 110,000    | Yes  | demand by company — sizes the Year-2 capex     |
+| 20     | 0          | Yes  | every rival's prices [+] free                  |
+| 21     | 0          | Yes  | every rival's campaign [+] free                |
+| 22     | 0          | Yes  | every rival's promotions [+] free              |
+| 23     | 1,000      | Yes  | every rival's net income                       |
+| 24     | 10,000     | Yes  | industry average production cost               |
+| 25     | 5,000      | Yes  | industry average salary cost                   |
+| 26     | 10,000     | Yes  | industry balance sheets                        |
+| 27     | 3,000      | Yes  | platforms by company                           |
+| 28     | 1,000      | Yes  | rival production shifts                        |
+| others |            | No   |                                                |
+
+| Research budget | EUR 421,900 = 0.23% of net revenue |
+| --------------- | ---------------------------------- |
+
+  WHY
+  ---------------------------------------------------------------------------
+  ✅ Surveys 20, 21 and 22 are free and hand over every rival's entire
+     commercial strategy. In the test round they showed that the winning team
+     charged 1.9x our moisturiser price and that three of five teams never
+     chose an advertising campaign at all.
+
+  🔵 Four paid surveys are bought for specific decisions, not for completeness:
+     · 19 tells us the demand we FAILED to serve, by company. It is the single
+       input that sizes the Year-2 line purchase, and we have never had it.
+     · 15 tells us what shelf space we actually achieve against what we ask.
+       We have asked twice and never once seen the answer.
+     · 8 shows where rival H brands sit on the positioning map. Positioning is
+       the first demand driver the Round-2 briefing lists, and in the test round
+       we were one of only two teams who chose a campaign at all.
+     · 11 gives share of voice, which the evaluation rubric asks for by name.
+
+  ⚖️ The rubric requires analysis "compared to other companies". EUR 421,900 is
+     what that evidence costs, against EUR 85M of projected net income.
+
+
+###############################################################################
+  5  —  PRICES
+###############################################################################
+
+| Product | Market | Channel | M.S.R.P. (EUR) | Retailer margin (EUR) |
+| ------- | ------ | ------- | -------------- | --------------------- |
+| S       | A      | G       | 12.20          | 2.00                  |
+| S       | A      | S       | 12.60          | 2.00                  |
+| S       | A      | T       | 13.40          | 2.00                  |
+| S       | B      | G       | 12.60          | 2.00                  |
+| S       | B      | S       | 13.00          | 2.00                  |
+| S       | B      | T       | 13.80          | 2.00                  |
+| S       | E      | G       | blank          | blank                 |
+| H       | A      | G       | 6.90           | 1.10                  |
+| H       | A      | S       | 7.10           | 1.10                  |
+| H       | A      | T       | 7.45           | 1.10                  |
+| H       | B      | G       | 7.20           | 1.10                  |
+| H       | B      | S       | 7.40           | 1.10                  |
+| H       | B      | T       | 7.75           | 1.10                  |
+| H       | E      | G       | blank          | blank                 |
+
+  THE EVIDENCE — this is the single most valuable change we make
+  ---------------------------------------------------------------------------
+  In the test round we sold moisturiser at EUR 4.45-5.00 while the market sat
+  at EUR 6.50-10.50, and the demand our brand generated was 56.8% of the entire
+  A+B baseline market. We had zero closing inventory. We sold out at every
+  price point, in a market that was telling us the price was wrong.
+
+| Company | H price, market A, channel G | Net income |
+| ------- | ---------------------------- | ---------- |
+| 2       | 8.50                         | +7,366,632 |
+| 1       | 7.00                         | -6,663,707 |
+| 4       | 6.50                         | +2,609,602 |
+| 3 (us)  | 4.45                         | +4,919,135 |
+
+  📌 The team that charged nearly double our price out-earned us by 50%.
+
+  WHERE THIS YEAR'S PRICES SIT
+  ---------------------------------------------------------------------------
+  H at an average EUR 7.33 places us ABOVE the cheapest rival (6.50) and BELOW
+  the winner (8.50) — the middle of the observed band, with the best positioning
+  and full advertising reach behind it. S at an average EUR 12.96 is above every
+  rival, which is deliberate: in the test round we held the HIGHEST sunscreen
+  price in the market and still generated 39.9% of baseline S demand.
+
+| Floor                       | S          | H          |
+| --------------------------- | ---------- | ---------- |
+| Standard cost (calibrated)  | EUR 5.5174 | EUR 2.2928 |
+| Dumping floor (SC + margin) | EUR 7.52   | EUR 3.39   |
+| Lowest price we set         | EUR 12.20  | EUR 6.90   |
+
+  ⚖️ RETAILER MARGINS RISE, S 1.90 -> 2.00 AND H 0.95 -> 1.10. At the new prices
+     the old margins would fall to 13-15% of retail, and the Round-2 briefing
+     names retailer margin as one of three things shelf space is bought with.
+     The increase costs EUR 3,861,000 and is instrumented by survey 15 — if the
+     shelf space we achieve does not move, take it back in Year 2.
+
+  📌 Every euro of price now keeps EUR 0.955. Only R&D's 4.5% is lost, because
+     we use no wholesalers. The Year-1 pack's "13% never reaches you" applies
+     only to wholesaler zones, and we have none.
+
+| Price sensitivity, whole plant sold | H avg | S avg | Net income  |
+| ----------------------------------- | ----- | ----- | ----------- |
+| -20%                                | 5.86  | 10.37 | 44,120,681  |
+| -10%                                | 6.60  | 11.66 | 64,746,638  |
+| AS PLANNED                          | 7.33  | 12.96 | 85,372,595  |
+| +10%                                | 8.06  | 14.26 | 105,998,551 |
+| +20%                                | 8.80  | 15.55 | 126,624,508 |
+
+  🔴 Market E: leave price AND margin AND shelf space blank. A price with no
+     shelf space is what burned EUR 184,000 of E advertising for zero sales in
+     the test round.
+
+
+###############################################################################
+  6  —  PROMOTIONS
+###############################################################################
+
+| Product    | Market | Channel | No. promotions | Type           | Detail |
+| ---------- | ------ | ------- | -------------- | -------------- | ------ |
+| H          | A      | S       | 1              | 5 direct bonus | 5      |
+| all others | -      | -       | 0              | -              | -      |
+
+  WHY EXACTLY ONE, IN EXACTLY ONE CHANNEL
+  ---------------------------------------------------------------------------
+  ⚖️ We ran zero promotions in the test round, so we have no idea what the
+     simulator's promotion response looks like — and the evaluation rubric asks
+     us to analyse "promotions, analyzing their effectiveness". Running none
+     again means having nothing to say.
+
+  🔵 The design is a controlled read: market A supermarkets get the promotion,
+     market B supermarkets are the control. Same product, same channel, only the
+     promotion differs. Type 5 is the direct promotional bonus, a EUR 1.20 gift
+     for every 5 units bought, so it costs EUR 0.24 per promoted unit — the
+     cheapest of the eight types. A 3x2 would be a 33% discount.
+
+| Item                                    | Value      |
+| --------------------------------------- | ---------- |
+| Units on promotion, 3 of 52 weeks (S18) | 337,082    |
+| Cost at EUR 1.20 per 5 units            | EUR 80,900 |
+| Share of net revenue                    | 0.04%      |
+
+  📌 The downside is bounded twice over: section 48 says the market simply
+     REJECTS a promotion you cannot supply, and a rejected promotion costs
+     nothing except in the case of a drawing, which this is not.
+
+  ⚠️ Reading survey 22 next year: its legend is offset by one from the decision
+     sheet. Survey code 1 means NO promotion, 2 is price reduction, 3 is 3x2,
+     6 is the direct bonus. On the decision sheet, type 5 is the direct bonus.
+
+
+###############################################################################
+  7  —  ADVERTISING
+###############################################################################
+
+| Advertising campaign | Market A | Market B | Market E |
+| -------------------- | -------- | -------- | -------- |
+| Product S            | 18       | 18       | blank    |
+| Product H            | 19       | 19       | blank    |
+
+| Repetitions | Market A: S | Market A: H | Market B: S | Market B: H |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| DR display  | 0           | 0           | 0           | 0           |
+| PR press    | 2           | 3           | 2           | 3           |
+| RA radio    | 0           | 0           | 0           | 0           |
+| SM social   | 0           | 0           | 0           | 0           |
+| TV          | 5           | 6           | 5           | 6           |
+
+| Spend      | S per market | H per market | Total A+B   |
+| ---------- | ------------ | ------------ | ----------- |
+| Television | EUR 90,000   | EUR 108,000  | EUR 396,000 |
+| Press      | EUR 30,000   | EUR  45,000  | EUR 150,000 |
+| TOTAL      | EUR 120,000  | EUR 153,000  | EUR 546,000 |
+
+  WHY THIS MUCH AND NOT MORE
+  ---------------------------------------------------------------------------
+  The Round-2 briefing gives the target in one line: "Net rating 1.00 (100%) is
+  a must. It means you're reaching all potential buyers."
+
+| Plan           | Net rating | GRPs | Cost per market |
+| -------------- | ---------- | ---- | --------------- |
+| S: 5 TV + 2 PR | 99.72%     | 396  | EUR 120,000     |
+| H: 6 TV + 3 PR | 99.94%     | 504  | EUR 153,000     |
+
+  📌 THE TEST ROUND MEASURED THE RETURN ABOVE THAT POINT, AND IT IS ZERO. In
+     market A we ran 14 insertions of H for EUR 234,000 and reached 100.00%. In
+     market B we ran 7 for EUR 117,000 and reached 99.64%. Market B, on half the
+     budget, generated 28.8% MORE demand. The extra EUR 117,000 bought 0.36
+     points of reach and nothing else we can detect.
+
+  ✅ Television is the cheapest reach in both markets at EUR 300 per point of
+     buyers, press second at EUR 312.50.
+  🔴 Social media stays at zero. It is the most expensive medium per point of
+     reach in both territories, and it is the one rivals reach for instinctively.
+
+  ⚖️ CAMPAIGNS 18 AND 19 ARE KEPT, AND THIS MAY BE OUR LARGEST HIDDEN EDGE. The
+     positioning axes are Natural (X) and Technological (Y), each holding 40% of
+     buyers. Campaign 19 puts moisturiser on Natural, campaign 18 puts sunscreen
+     on Technological, so our two products split the two big segments instead of
+     competing for one. In the test round survey 21 showed that THREE OF THE
+     FIVE TEAMS CHOSE NO CAMPAIGN AT ALL, which section 17 says leaves them with
+     "a neutral, undefined positioning". We held the highest sunscreen price in
+     the market and still took 39.9% of baseline demand. Survey 8 this year
+     tells us whether that is why.
+
+
+###############################################################################
+  8  —  TRADE  (shelf space and point of purchase)
+###############################################################################
+
+| Product | Market | Channel | Shelf space (%) | P.O.P. advertising (EUR) |
+| ------- | ------ | ------- | --------------- | ------------------------ |
+| S       | A      | G       | 16              | 10,000                   |
+| S       | A      | S       | 16              | 10,000                   |
+| S       | A      | T       | 16              | 10,000                   |
+| S       | B      | G       | 16              | 10,000                   |
+| S       | B      | S       | 16              | 10,000                   |
+| S       | B      | T       | 16              | 10,000                   |
+| H       | A      | G       | 22              | 15,000                   |
+| H       | A      | S       | 22              | 15,000                   |
+| H       | A      | T       | 22              | 15,000                   |
+| H       | B      | G       | 22              | 15,000                   |
+| H       | B      | S       | 22              | 15,000                   |
+| H       | B      | T       | 22              | 15,000                   |
+| either  | E      | G       | blank           | blank                    |
+
+  WHY
+  ---------------------------------------------------------------------------
+  🔴 THIS IS THE FIELD THAT KILLED MARKET E IN THE TEST ROUND. Section 21: no
+     shelf space means the simulator assumes you do not want the channel and you
+     sell nothing. We entered E prices and E advertising and left shelf space at
+     zero, and sold zero units while paying EUR 184,000 for the campaign.
+
+  ⚖️ 16% and 22% are one point and two points above the 15% and 20% we asked for
+     in the test round. Section 21 warns that an excessive objective makes the
+     retailer "react negatively", and we have never seen what we actually
+     achieve. Survey 15 this year closes that loop and sizes the Year-2 ask.
+
+  🔵 POP rises from EUR 4,000/5,000 per channel to EUR 10,000/15,000 — total
+     EUR 150,000, against a cap of EUR 500,000 per channel. Point-of-purchase
+     advertising is listed as a demand driver in the briefing and we have never
+     varied it. This is a deliberately small step, not a bet.
+
+
+###############################################################################
+  9  —  PRODUCTION            ** THE IRREVERSIBLE SECTION **
+###############################################################################
+
+| Production lines | Installed | To install | Total | To be ACTIVATED |
+| ---------------- | --------- | ---------- | ----- | --------------- |
+| Product S        | 0         | 6          | 6     | 6               |
+| Product H        | 0         | 16         | 16    | 16              |
+
+| Number of production shifts               | 3         |
+| ----------------------------------------- | --------- |
+| Preventive maintenance department         | CHECKED   |
+| Installation of PY quality control system | UNCHECKED |
+
+| Supply management | RM inventory | FG inventory | Raw material to purchase |
+| ----------------- | ------------ | ------------ | ------------------------ |
+| Product S         | 0            | 0            | 3,580,200                |
+| Product H         | 0            | 0            | 23,868,000               |
+
+| SMED | Previous | To acquire | Total | To activate | Teams per shift |
+| ---- | -------- | ---------- | ----- | ----------- | --------------- |
+|      | 0        | 0          | 0     | 0           | 0               |
+
+  THE LINE MIX — WHY 6 S AND 16 H
+  ---------------------------------------------------------------------------
+  Lines are irreversible and carried for four years, so this is the decision to
+  argue about. The ranking is by contribution per euro of capex:
+
+| Product | SC (calib.) | Contribution/unit | Units/line-yr | Per EUR of capex |
+| ------- | ----------- | ----------------- | ------------- | ---------------- |
+| H       | 2.2928      | 3.607             | 1,462,500     | 3.52             |
+| S       | 5.5174      | 4.859             | 585,000       | 1.35             |
+
+  📌 An H line returns 3.52 times its own capex every year at these prices; an S
+     line returns 1.35 times. Both pay back inside a year, so the mix is set by
+     how much of each market we can credibly take, not by which is better.
+
+| Plant      | Capex      | Cash left  | S units   | H units    | S share | H share |
+| ---------- | ---------- | ---------- | --------- | ---------- | ------- | ------- |
+| 4 S + 14 H | 29,400,000 | 24,600,000 | 2,340,000 | 20,475,000 | 11.1%   | 36.4%   |
+| 6 S + 16 H | 36,600,000 | 17,400,000 | 3,510,000 | 23,400,000 | 16.6%   | 41.6%   |
+| 6 S + 18 H | 39,600,000 | 14,400,000 | 3,510,000 | 26,325,000 | 16.6%   | 46.8%   |
+| 8 S + 20 H | 46,800,000 | 7,200,000  | 4,680,000 | 29,250,000 | 22.2%   | 52.0%   |
+
+  ⚖️ 6 S + 16 H is the largest plant that does all four of these at once:
+     · keeps the lowest monthly cash point above EUR 8,000,000 with no borrowing
+     · keeps our share of the A+B baseline market credible — 41.6% of
+       moisturiser and 16.6% of sunscreen, against the 56.8% and 39.9% of
+       baseline demand our brand generated at test-round prices
+     · leaves 10 of the 32 line slots and EUR 17,400,000 of cash for Year 2,
+       when SMED becomes available and survey 19 tells us the unserved demand
+     · needs no loan, so no interest, no upfront fee and no automatic borrowing
+
+  🔴 THREE SHIFTS, NOT TWO — AND THE TEST-ROUND PACK HAD THIS BACKWARDS.
+     Production labour is charged per line-shift and sits inside the standard
+     cost, so the standard cost per unit is IDENTICAL at 1, 2 or 3 shifts. The
+     only cost of a third shift is the depreciation step from 10% to 12%, and
+     depreciation is charged on the LINES only, not on the land — EUR 732,000.
+
+| Route to 26,910,000 units | Lines needed | Capex      | Depreciation | Slots  |
+| ------------------------- | ------------ | ---------- | ------------ | ------ |
+| 3 shifts                  | 6 S + 16 H   | 36,600,000 | 4,392,000    | 22     |
+| 2 shifts                  | 9 S + 24 H   | 54,900,000 | 5,490,000    | 33 [!] |
+
+     📌 Matching this output at two shifts costs EUR 18,300,000 more of
+        irreversible capex and needs 33 lines, which breaches the 32-line
+        ceiling outright. Two shifts is not the cautious option, it is the
+        expensive one.
+
+  ✅ PREVENTIVE MAINTENANCE ON. The test round produced exactly 81.25% of
+     nameplate; the arithmetic without it gives 78.75%. That is 2.5 points of
+     nameplate for EUR 500,000 — at this plant, +828,000 units worth
+     EUR 3,121,812 of contribution. It is also the only productivity decision that is
+     reversible every year.
+
+  🔴 POKA YOKE UNCHECKED. EUR 720,000 per line, and it applies to every line we
+     ever install. At 22 lines that is EUR 15,840,000 for a payback beyond the
+     length of the game. It sounds like good management, which is why rivals buy
+     it.
+
+  ⬜ SMED cannot be acquired before Year 2 (S27). All five fields stay at zero.
+     It is the first purchase of Year 2: it removes the main-module stop
+     entirely and lifts utilisation well above 81.25% on lines we already own.
+
+  🔴 THE RAW MATERIAL FIELD — THE ONE THAT BROKE THE TEST ROUND
+     The rule is now exact and measured: raw material used = production x 1.02.
+
+| Product | Production | x 1.02     | Enter      | Cost at list |
+| ------- | ---------- | ---------- | ---------- | ------------ |
+| S       | 3,510,000  | 3,580,200  | 3,580,200  | 5,907,330    |
+| H       | 23,400,000 | 23,868,000 | 23,868,000 | 25,061,400   |
+
+     📌 Last time this field was keyed as 130,600,000 instead of 13,923,000 and
+        it cost EUR 1,576,157 net and second place. TWO PEOPLE CHECK THIS FIELD,
+        AND THE PERSON WHO CHECKS IS NOT THE PERSON WHO TYPED IT.
+
+  🔴 "Lines to be activated" resets to zero every year. Installed is not
+     activated, and an unactivated line produces nothing.
+
+
+###############################################################################
+  10  —  FINANCE
+###############################################################################
+
+| Loan requested               | 0         |
+| ---------------------------- | --------- |
+| Loan prepayment              | 0         |
+| Financial investments        | 0         |
+| Fixed-term deposit           | 0         |
+| Line of credit requested     | 5,000,000 |
+| Customers payment terms      | 60 days   |
+| Factoring                    | UNCHECKED |
+| Max. amount to be discounted | n/a       |
+| Suppliers payment terms, S   | 90 days   |
+| Suppliers payment terms, H   | 90 days   |
+| Investment in securities     | 0 / 0 / 0 |
+
+  THE OCR TEST (S41) — RUN THIS BEFORE SUBMITTING
+  ---------------------------------------------------------------------------
+
+| Component                                      | EUR        |
+| ---------------------------------------------- | ---------- |
+| 80% x new capex 36,600,000                     | 29,280,000 |
+| 50% x opex base 4,501,900                      | 2,250,950  |
+| (advertising 546,000 + POP 150,000             |            |
+| + sales managers 600,000 + rep fixed 2,184,000 |            |
+| + overhead 600,000 + market research 421,900)  |            |
+| 15% x raw material 30,968,730                  | 4,645,310  |
+| OCR REQUIRED                                   | 36,176,260 |
+| CASH AVAILABLE 2 JANUARY                       | 54,000,000 |
+| SURPLUS                                        | 17,823,740 |
+
+  ✅ No loan. If OCR had exceeded cash the simulator would have borrowed for us
+     at 10% (S41), and a negative cash account forces a loan outright (S42).
+
+  NO FACTORING — THIS IS A DELIBERATE REVERSAL
+  ---------------------------------------------------------------------------
+  ⚖️ Factoring costs 5.5% x (terms in months / 12) x net revenue. Verified: it
+     cost exactly EUR 537,708 in the test round. On EUR 184,240,891 of net
+     revenue at 60-day terms it would cost EUR 1,688,875. Section 41 adds
+     accounts receivable BACK into available cash on 2 January, so declining to
+     factor does not reduce what Year 2 can spend — it only delays collection by
+     two months inside the year. A EUR 5,000,000 credit line covers exactly that
+     gap for about EUR 100,000.
+
+| Cash through the year, no factoring | EUR         |
+| ----------------------------------- | ----------- |
+| Cash after paying capex in January  | 17,400,000  |
+| Lowest point, end of month 2        | 8,459,579   |
+| First collections arrive, month 3   | +15,353,408 |
+| Cash at 31 December                 | 94,065,002  |
+| Receivables at 31 December (2 mo)   | 30,706,815  |
+
+  NO FIXED-TERM DEPOSIT — ALSO A REVERSAL
+  ---------------------------------------------------------------------------
+  🔴 In the test round we deposited EUR 15,000,000 at 2.5%, earned EUR 0, and
+     paid a EUR 150,000 early-withdrawal penalty when the simulator cancelled
+     the deposit to plug the cash hole. The EUR 17,400,000 left after capex is
+     working capital, not idle cash. Deposit in Year 2 out of realised profit.
+
+  ⬜ 60-day customer terms, not 120: shorter terms mean smaller receivables and,
+     if we ever do factor, a third of the cost. Nothing in the scenario says
+     longer terms win sales.
+
+  ⬜ 90-day supplier terms, matching the test round, so that the raw-material
+     price we are quoted is comparable with last year's two data points. Longer
+     terms raise the unit price (S28) and we do not need the financing.
+
+
+###############################################################################
+  11  —  SALES FORECAST
+###############################################################################
+
+  Channel weights are the ACTUAL demand weights the test round revealed, not
+  the guess we used last time. "Through sales managers" equals the total in
+  every row, because we own all 12 zones and no unit passes a wholesaler.
+
+  SUNSCREEN (S) — total 3,510,000 units
+
+| Channel | Weight | Normal units | Through managers | Promo | Price | Margin |
+| ------- | ------ | ------------ | ---------------- | ----- | ----- | ------ |
+| AG      | 7.42%  | 260,600      | 260,600          | 0     | 12.20 | 2.00   |
+| AS      | 28.04% | 984,330      | 984,330          | 0     | 12.60 | 2.00   |
+| AT      | 12.58% | 441,688      | 441,688          | 0     | 13.40 | 2.00   |
+| BG      | 3.75%  | 131,548      | 131,548          | 0     | 12.60 | 2.00   |
+| BS      | 36.22% | 1,271,380    | 1,271,380        | 0     | 13.00 | 2.00   |
+| BT      | 11.98% | 420,454      | 420,454          | 0     | 13.80 | 2.00   |
+| EG      | blank  | blank        | blank            | blank | blank | blank  |
+| TOTAL   |        | 3,510,000    | 3,510,000        | 0     |       |        |
+
+  MOISTURISING LOTION (H) — total 23,400,000 units
+
+| Channel | Weight | Normal units | Through managers | Promo   | Price | Margin |
+| ------- | ------ | ------------ | ---------------- | ------- | ----- | ------ |
+| AG      | 7.27%  | 1,700,218    | 1,700,218        | 0       | 6.90  | 1.10   |
+| AS      | 24.97% | 5,505,679    | 5,505,679        | 337,082 | 7.10  | 1.10   |
+| AT      | 11.47% | 2,683,222    | 2,683,222        | 0       | 7.45  | 1.10   |
+| BG      | 5.33%  | 1,248,101    | 1,248,101        | 0       | 7.20  | 1.10   |
+| BS      | 37.89% | 8,865,470    | 8,865,470        | 0       | 7.40  | 1.10   |
+| BT      | 13.08% | 3,060,228    | 3,060,228        | 0       | 7.75  | 1.10   |
+| EG      | blank  | blank        | blank            | blank   | blank | blank  |
+| TOTAL   |        | 23,062,918   | 23,062,918       | 337,082 |       |        |
+
+  ⚖️ We forecast selling the entire plant. Anything unsold becomes finished-goods
+     inventory, which never deteriorates and is sold FIRST next year (S3), so
+     the downside of over-forecasting is working capital, not loss. A stockout
+     is the asymmetric risk: section 34 says it damages brand prestige into
+     later years.
+
+  ⚠️ These weights come from a year in which supply was rationed, so they are
+     demand-proportional rather than preference-proportional. Survey 4 corrects
+     them at the end of this year.
+
+  📌 Note how far this is from our first guess: we assumed sunscreen would lean
+     to pharmacies. It does not. SUPERMARKETS ARE 64% OF BOTH PRODUCTS, and
+     market B's supermarkets alone are more than a third.
+
+
+###############################################################################
+  12  —  WHAT THIS PLAN PRODUCES
+###############################################################################
+
+| Projected income statement              | EUR         |
+| --------------------------------------- | ----------- |
+| Revenue at retail                       | 217,000,891 |
+| less retailer margins                   | -32,760,000 |
+| NET REVENUE                             | 184,240,891 |
+| less cost of goods sold                 | -73,018,174 |
+| GROSS MARGIN                            | 111,222,716 |
+| promotions                              | -80,900     |
+| advertising                             | -546,000    |
+| point of purchase                       | -150,000    |
+| sales managers                          | -600,000    |
+| sales reps, fixed                       | -2,184,000  |
+| sales reps, variable at 0.6%            | -976,282    |
+| office and management payroll           | -2,818,000  |
+| general overhead                        | -600,000    |
+| market research                         | -421,900    |
+| preventive maintenance                  | -500,000    |
+| logistics, factory to platforms         | -182,400    |
+| logistics, platforms to retailers       | -1,497,600  |
+| warehouse and platform costs (estimate) | -700,000    |
+| research and development at 4.5%        | -9,765,040  |
+| depreciation at 12% of lines            | -4,392,000  |
+| workforce turnover (test-round rate)    | -336,000    |
+| OPERATING INCOME                        | 85,472,595  |
+| financial expenses (credit line only)   | -100,000    |
+| NET INCOME                              | 85,372,595  |
+
+| Ratio                       | Year 1 plan | Test round Y1 |
+| --------------------------- | ----------- | ------------- |
+| Gross margin on net revenue | 60.4%       | 37.1%         |
+| Net margin on net revenue   | 46.3%       | 8.39%         |
+| ROE on closing equity       | 56.4%       | 6.94%         |
+
+  📌 The reported ratios use NET revenue and CLOSING balances. ROE is net income
+     over closing equity, which is EUR 66,000,000 plus this year's profit.
+
+
+###############################################################################
+  13  —  WHAT HAPPENS IF WE ARE WRONG
+###############################################################################
+
+  The one thing this plan cannot know is how much demand survives a 55% price
+  increase. So here is the whole curve.
+
+| Sell-through | Units sold | Net revenue | Net income | ROE   | Inventory  |
+| ------------ | ---------- | ----------- | ---------- | ----- | ---------- |
+| 100%         | 26,910,000 | 184,240,891 | 85,372,595 | 56.4% | 0          |
+| 85%          | 22,873,500 | 156,604,757 | 70,312,520 | 51.6% | 10,952,726 |
+| 70%          | 18,837,000 | 128,968,623 | 55,252,446 | 45.6% | 21,905,452 |
+| 60%          | 16,146,000 | 110,544,534 | 45,212,397 | 40.7% | 29,207,270 |
+| 50%          | 13,455,000 | 92,120,445  | 35,172,347 | 34.8% | 36,509,087 |
+| 40%          | 10,764,000 | 73,696,356  | 25,132,298 | 27.6% | 43,810,905 |
+| 30%          | 8,073,000  | 55,272,267  | 15,092,248 | 18.6% | 51,112,722 |
+
+  📌 BREAK-EVEN IS 14.97% OF THE PLANT — 4,027,876 units. In the test round we
+     sold 14,430,000 units, and that was with a factory only half this size.
+     Even if the price rise destroys 70% of our demand we still earn five times
+     what we earned in the test round.
+
+  ⚖️ And unsold units are not lost. They become finished-goods inventory, never
+     deteriorate, and are sold first next year. The downside of this plan is
+     working capital and a slower Year 2, not a loss.
+
+
+###############################################################################
+  14  —  WHAT WE ARE DELIBERATELY MEASURING THIS YEAR
+###############################################################################
+
+  Four decisions are instrumented so that the CEO meeting has causes, not just
+  figures. Each one is a bounded experiment inside a graded year.
+
+| # | The question                        | The design                              | Read it in            |
+| - | ----------------------------------- | --------------------------------------- | --------------------- |
+| 1 | Does a promotion pay?               | H promoted in AS only; BS is the control | survey 4 + results    |
+| 2 | Does platform count drive storage?  | 12 platforms vs the 6 we ran last time   | warehouse cost line   |
+| 3 | What shelf space do we actually get?| ask 16% / 22%, measure the outcome       | survey 15             |
+| 4 | Is the last mile drop-driven?       | plan 30 + 22 vehicles, EUR 1,497,600     | transport cost + flags|
+| 5 | Do more reps sell more?             | B lifted 2+2 to 3+3, A held at 4+4       | survey 4 by channel   |
+
+  🔵 Record the actuals against these forecasts the moment results arrive. That
+     record is what the rubric means by "establish the causes for the results",
+     and it is worth more of the grade than the result itself.
+
+
+###############################################################################
+  15  —  BEFORE YOU SUBMIT
+###############################################################################
+
+  One named person runs this list. Every field below RESETS each year.
+
+     [ ] Open Information first and copy the Director's actual values. Per
+         capita income, raw material cost, power cost, FX and every interest
+         rate can differ from the test round. If they differ, this plan is
+         re-run before it is entered.
+     [ ] Sales managers 6 / 6 / 0 — resets to zero
+     [ ] Platforms 12 / 12, market E left at its default
+     [ ] Factory to platforms: A 2 x 16,000 kg, B 2 x 20,000 kg
+     [ ] Platforms to retailers: A 30 x 4,000 kg, B 22 x 4,000 kg — NOT one
+     [ ] All six salary fields re-entered; training department NO
+     [ ] Reps per zone AS 4, AT 4, BS 3, BT 3; fixed 26,000; variable 0.6%
+     [ ] 17 surveys selected, budget EUR 421,900
+     [ ] Every channel we sell in has a PRICE, a MARGIN and a SHELF SPACE
+     [ ] Market E left blank everywhere except the logistics defaults
+     [ ] Campaign 18 for S and 19 for H, in BOTH markets
+     [ ] Insertions: S 5 TV + 2 PR, H 6 TV + 3 PR, per market. Social zero
+     [ ] Lines to install 6 S and 16 H; LINES TO BE ACTIVATED 6 and 16
+     [ ] Shifts 3; preventive maintenance CHECKED; Poka Yoke UNCHECKED
+     [ ] SMED all zeros — it cannot be bought in Year 1
+     [ ] RAW MATERIAL: S 3,580,200 and H 23,868,000. CHECKED BY A SECOND PERSON
+     [ ] Loan 0, deposit 0, factoring UNCHECKED, credit line 5,000,000
+     [ ] Customers 60 days; suppliers 90 days both products
+     [ ] Sales forecast totals 3,510,000 S and 23,400,000 H, promo 337,082
+     [ ] OCR 36,176,260 is below cash 54,000,000
+
+
+###############################################################################
+  16  —  HOW YEARS 2 TO 4 FOLLOW FROM THIS
+###############################################################################
+
+| Year | Theme        | What it commits                                                                                                                                               |
+| ---- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | COMMIT       | 22 lines, 3 shifts, market price. 10 slots held back.                                                                                                         |
+| 2    | SMED + SCALE | Buy SMED — it lifts output on lines we already own. Add lines where survey 19 shows unserved demand. Decide market E with real numbers. Deposit surplus cash. |
+| 3    | CONSOLIDATE  | Fill the 32-line ceiling if Years 1-2 justify it. Push price where share held. Prune channels that did not.                                                   |
+| 4    | HARVEST      | No irreversible capex that cannot pay back inside the year. Maximise accumulated profit — that is the ranked figure.                                          |
+
+  📌 The one number that drives Year 2 is survey 19: demand by company. It tells
+     us how much of the market we still cannot serve, and therefore whether the
+     remaining 10 line slots should be H, S, or held for market E.
+
+
+
+###############################################################################
+  17  —  RECONCILIATION WITH "06-graded-year1-plan-2.1.md"
+###############################################################################
+
+  A second Year-1 plan appeared in this folder while this one was being built.
+  It is a serious document and it is worth reading. But before any of it is
+  keyed in, two things have to be said plainly.
+
+  🔴 ITS EVIDENCE BASE CANNOT BE VERIFIED FROM THIS REPOSITORY
+  ---------------------------------------------------------------------------
+  Plan 2.1 rests on test-round YEAR 2 results. Its source list names five files
+  that do not exist here:
+
+| File it cites                                        | Present?                                 |
+| ---------------------------------------------------- | ---------------------------------------- |
+| day 2/year 2 results/DIR0114SI02082TE3Y2REP.md       | NO — there is no "day 2" folder          |
+| day 2/year 2 results/DIR0114SI02082TE3Y2DEP.md       | NO                                       |
+| day 2/year 2 results/DIR0114SI02082TE3Y2INFen_US.md  | NO                                       |
+| docs/04-test-year1-postmortem-and-year2-audit.md     | NO — docs/ holds only 00-03              |
+| docs/05-test-year2-postmortem-and-graded-run-plan.md | NO                                       |
+| Scenario MMT39 EN v231.pdf                           | NO — this repo has "Scenario MMT39 .pdf" |
+
+  🔴 AND ONE OF ITS YEAR-1 FIGURES IS CONTRADICTED BY THE RESULT SHEET.
+     It quotes "test-Y1 demand of 9,199,028" for sunscreen. Page 2 of
+     day 1/year 1/DIR0114SI02082TE3Y1REP.pdf reports 8,419,028. That is a 9.3%
+     error on a number that is printed in the results, which is a reason to
+     check the rest of its unverifiable figures rather than assume them.
+
+  ⚖️ This is NOT a claim that its Year-2 numbers are wrong. They may be exactly
+     right and simply live on another machine. If those result files exist,
+     hand them over and this plan gets rebuilt on two years of evidence instead
+     of one — the price readings alone would be worth more than everything else
+     in this document. Until then, this plan uses only what can be checked.
+
+  WHERE THE TWO PLANS DIFFER, AND WHAT THE VERIFIED EVIDENCE SAYS
+  ---------------------------------------------------------------------------
+
+| Decision             | Plan 2.1                 | This plan                | Verified evidence                            |
+| -------------------- | ------------------------ | ------------------------ | -------------------------------------------- |
+| Lines                | 12 S + 20 H = all 32     | 6 S + 16 H = 22          | [~] see below                                |
+| Capex                | EUR 55,200,000           | EUR 36,600,000           |                                              |
+| Loan                 | EUR 25,000,000           | EUR 0                    | [~] its own cash trough is -21,737,713       |
+| Cash trough          | -EUR 21,737,713          | +EUR 8,459,579           |                                              |
+| H price, market A    | 5.25                     | 6.90 - 7.45              | [!] every Y1 rival was 6.50-10.50            |
+| H price, market B    | 7.75                     | 7.20 - 7.75              | [+] agree                                    |
+| S price              | 14.50 flat, all channels | 12.20 - 13.80 by channel | [~] B earns 35k vs A 27k                     |
+| Training department  | ON, EUR 722,000          | OFF                      | [!] measured turnover cost was 336,000       |
+| Rep fixed salary     | 27,000                   | 26,000                   | [~] 7 leavers cost 210,000                   |
+| Trunk fleet          | 5 veh at 24,000 kg       | 4 veh at 16-20,000 kg    | [+] both clear; theirs costs 81,600 more     |
+| Last mile            | 50 veh at 10,000 kg      | 52 veh at 4,000 kg       | [+] both in range; theirs costs 302,400 more |
+| Supplier terms       | 120 days                 | 90 days                  | [~] 120 defers cash, raises unit price       |
+| S raw material       | production x1.02 x1.05   | production x1.02         | [+] 1.02 is exact and measured               |
+| Surveys              | ~EUR 166,800             | EUR 421,900              | [!] theirs omits 19 and 15                   |
+| Projected net income | EUR 110,187,386          | EUR 85,372,595           |                                              |
+
+  THE THREE DIFFERENCES THAT ACTUALLY MATTER
+  ---------------------------------------------------------------------------
+
+  1. ALL 32 LINES IN YEAR 1. Plan 2.1's own four-year table shows Years 2, 3 and
+     4 with identical volumes and states that "no line additions [are] possible".
+     That spends the entire four-year option in the first hour of a graded game,
+     before a single graded data point exists, and it forfeits the Year-2 move
+     that the evidence most clearly supports: buying SMED and adding lines where
+     survey 19 shows unserved demand. ⚖️ If the Year-2 test results really do
+     show H demand of 35.9M units, 20 H lines is defensible — which is precisely
+     why those files need to be produced before the button is pressed.
+
+  2. MOISTURISER AT EUR 5.25 IN MARKET A. This is the one to argue hardest
+     about. Survey 20 shows every rival in the test round priced H between
+     EUR 6.50 and EUR 10.50; EUR 5.25 is 19% below the cheapest of them. Selling
+     the cheapest moisturiser in the market is exactly what cost us first place
+     in the test round, and market A is 43.9% of our volume. Even if the Year-2
+     experiment showed demand holding at 5.25, holding demand is not the test —
+     the test is contribution per unit, and EUR 1.65 of price on 10.2M units in
+     market A is EUR 16.1M of gross margin.
+
+  3. THE TRAINING DEPARTMENT AT EUR 722,000. Total measured turnover cost in the
+     test round was EUR 336,000: 4 office staff at EUR 24,000 and 7 sales staff
+     at EUR 30,000. The remedy costs more than twice the disease and it cannot
+     pay at any turnover rate we have observed.
+
+  WHERE PLAN 2.1 IS AHEAD OF THIS ONE
+  ---------------------------------------------------------------------------
+  ✅ It carries a four-year Simulation trajectory with a loan book and deposits;
+     this document stops at Year 1 by design.
+  ✅ It has read the loan-maturity change (3 years for new loans in the second
+     year), which matters the moment we do borrow.
+  ✅ It sizes the trunk fleet with more headroom than strictly necessary, which
+     is the right direction of error on a leg where under-provisioning cost us
+     EUR 2.4M.
+
+###############################################################################
+  SOURCES
+###############################################################################
+
+  · day 2 - real thing/FINDINGS FROM TEST FOR THE REAL RUN.md — every calibrated
+    constant used above, with its derivation from the Year-1 test reports
+  · day 1/year 1/DIR0114SI02082TE3Y1DEP.pdf / REP.pdf / INV.pdf / INF.pdf
+  · Scenario MMT39 .pdf — S3, S4, S6, S7, S9, S10, S11, S12, S14, S15, S16,
+    S17, S18, S19, S20, S21, S22, S23, S24, S25, S26, S27, S28, S29, S30, S31,
+    S32, S33, S34, S35, S36, S37, S38, S39, S40, S41, S42, S43, S48, S49, S50
+  · 3 2026 MIM DD C2 EN MMT39.pdf — net rating, demand drivers, logistics method
+  · 4 2026 MIM evaluation guidelines.pdf — grading, CEO meetings, report deadline
+  · MASTER-PLAN.txt — strategy frame; the positions it takes that the test round
+    overturned are listed in section 9 of the findings document
+  · All figures recomputed on the calibrated constants; capacity, standard cost,
+    commission, R&D, depreciation and factoring formulas each reproduce the
+    simulator's own Year-1 figure exactly.
+
+###############################################################################
+#            END — Year 1 graded round. Check the raw material field.          #
+###############################################################################
