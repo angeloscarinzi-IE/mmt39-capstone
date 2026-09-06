@@ -51,6 +51,18 @@ items 6-16 are the graded-round recalibration.
 with its `§` reference. The Director changes FX, raw material costs and interest rates during the
 course; edit that block only.
 
+## Working conventions learned on this repo
+
+- **Decisions arrive as WhatsApp screenshot dumps** (`*/decisions taken/`,
+  `*/year N decisions (screenshots)/`) with heavy duplication — 23 files, 15 unique in Year 2.
+  Deduplicate by hash before reading, then transcribe every form into a numbered
+  `NN-YEAR-N-DECISIONS-AS-ENTERED.md` so results can be traced to a specific field.
+- **This repo is public on GitHub.** Never commit Praxis course PDFs, simulator report sheets
+  (`DIR*.pdf`, `DIR*.XLSX`) or decision-screen captures — `.gitignore` covers them, and commit
+  514d353 exists because they were published once by accident. Team-authored PDFs are fine.
+- **Each virtual year gets two documents**, not one: the record of what was entered, and a
+  graded review of whether it was right, with the euro value behind every grade.
+
 ## Document conventions
 
 - Verdict markers: `[!]` trap · `[+]` edge · `[~]` judgement call. Use `[!]`/`[+]`/`[~]` **inside
