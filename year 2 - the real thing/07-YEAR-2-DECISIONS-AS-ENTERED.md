@@ -47,7 +47,7 @@ explained against. Grading of these choices is in `08-YEAR-2-DECISION-REVIEW.md`
 | Finance                 | Financial investments      | 0                                  | **0**                                    | —      |
 | Finance                 | Credit line                | €10,000,000                        | **€0**                                   | −10M   |
 | Finance                 | Customer terms · factoring | 60 days · No                       | **60 days · No**                         | —      |
-| Finance                 | Supplier terms S / H       | 120 / 120 days                     | **not captured** — verify on the DEP     | `[!]`  |
+| Finance                 | Supplier terms S / H       | 120 / 120 days                     | **Cash** (per the Year-2 plan) `[!]`     | −3% RM |
 
 ## Opening position the plan was built on
 
